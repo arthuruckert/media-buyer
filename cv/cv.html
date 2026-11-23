@@ -2,212 +2,170 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Arthur Rückert · CV</title>
-<!--
-  Source of assets/Arthur-Ruckert-CV.pdf. Build with: node cv/build_cv.js
-  Any element with class "fill" holds a [PREENCHER] placeholder and is left out of the PDF until the data is filled in.
--->
+<title>Arthur Ruckert CV_NOV2.2</title>
+<!-- Source of assets/Arthur-Ruckert-CV.pdf. Build with: node cv/build_cv.js -->
 <style>
-  @page { size: Letter; margin: 0.55in 0.6in 0.55in 0.6in; }
+  @page { size: Letter; margin: 0.38in 0.5in 0.36in 0.5in; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', 'Carlito', Arial, sans-serif; font-size: 9.6pt; line-height: 1.42; color: #16181d; }
+  body { font-family: 'Inter', 'Carlito', Arial, sans-serif; font-size: 8.3pt; line-height: 1.3; color: #16181d; }
   a { color: #0b57d0; text-decoration: none; }
-  header { text-align: center; padding-bottom: 8pt; border-bottom: 1.4pt solid #16181d; }
-  h1 { font-size: 21pt; letter-spacing: 0.06em; font-weight: 700; }
-  .headline { font-size: 10.4pt; font-weight: 600; margin-top: 3pt; }
-  .contact { font-size: 8.8pt; margin-top: 4pt; color: #333; }
+  header { text-align: center; padding-bottom: 6pt; border-bottom: 1.3pt solid #16181d; }
+  h1 { font-size: 19pt; letter-spacing: 0.06em; font-weight: 700; }
+  .headline { font-size: 10pt; font-weight: 600; margin-top: 2pt; }
+  .contact { font-size: 8.4pt; margin-top: 3pt; color: #333; }
   .contact span + span::before { content: ' | '; color: #888; }
-  .proof { font-size: 8.8pt; margin-top: 2pt; }
-  h2 { font-size: 10.2pt; letter-spacing: 0.09em; font-weight: 700; margin: 12pt 0 5pt; padding-bottom: 2pt; border-bottom: 0.8pt solid #9aa0a8; break-after: avoid; }
-  p { margin-bottom: 5pt; }
-  .skills p { margin-bottom: 3.5pt; }
-  .block { break-inside: avoid; margin-bottom: 8pt; }
+  h2 { font-size: 9.4pt; letter-spacing: 0.09em; font-weight: 700; margin: 7pt 0 3pt; padding-bottom: 1.2pt; border-bottom: 0.8pt solid #9aa0a8; break-after: avoid; }
+  p { margin-bottom: 3.5pt; }
+  .skills p { margin-bottom: 2.4pt; }
+  .block { break-inside: avoid; margin-bottom: 4.5pt; }
   .row { display: flex; justify-content: space-between; gap: 12pt; align-items: baseline; }
-  .co { font-weight: 700; font-size: 10pt; }
-  .co .t { font-weight: 600; }
-  .dates { white-space: nowrap; font-weight: 600; font-size: 9pt; }
-  .sub { font-style: italic; color: #4a4f57; font-size: 9pt; margin-top: 1pt; }
-  .ctx { display: inline-block; font-size: 8.2pt; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #5b4500; background: #fff3cf; padding: 0 4pt; border-radius: 2pt; margin-top: 2pt; }
-  ul { margin: 3pt 0 0 13pt; }
-  li { margin-bottom: 2.6pt; padding-left: 1pt; }
-  b, strong { font-weight: 650; }
-  .lang { margin-top: 3pt; }
-  @media print { .fill { display: none; } }
-  .fill { background: #ffe9e9; }
+  .co { font-weight: 700; font-size: 9.3pt; }
+  .dates { white-space: nowrap; font-weight: 600; font-size: 8.4pt; }
+  .sub { font-style: italic; color: #4a4f57; font-size: 8.4pt; margin-top: 0.5pt; }
+  .group { break-inside: avoid; }
+  .group .role { break-inside: avoid; margin-top: 4pt; margin-left: 2pt; padding-left: 8pt; border-left: 1.2pt solid #c9ced6; }
+  .role { margin-top: 3pt; }
+  .role .t { font-weight: 650; font-size: 8.9pt; }
+  .intro { margin-top: 1.5pt; }
+  ul { margin: 2pt 0 0 12pt; }
+  li { margin-bottom: 1pt; padding-left: 1pt; }
+  b { font-weight: 650; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>ARTHUR RÜCKERT</h1>
-  <div class="headline">Paid Social Media Buyer + Creative Strategist | DTC e-commerce · US, UK, AU, NZ | Test-to-scale systems and briefs built from winners</div>
+  <div class="headline">Meta Media Buyer | Paid Social | Creative Strategy</div>
   <div class="contact">
-    <span><a href="mailto:pe.ruckert@gmail.com">pe.ruckert@gmail.com</a></span><span><a href="https://wa.me/13126751703">+1 312 675 1703</a></span><span><a href="https://www.linkedin.com/in/ruckert/">linkedin.com/in/ruckert</a></span><span><a href="https://arthuruckert.github.io/media-buyer/">arthuruckert.github.io/media-buyer</a></span>
+    <span><a href="mailto:pe.ruckert@gmail.com">pe.ruckert@gmail.com</a></span><span><a href="https://wa.me/13126751703">+1 312 675 1703</a></span><span><a href="https://www.linkedin.com/in/ruckert/">linkedin.com/in/ruckert</a></span><span><a href="https://arthuruckert.github.io/media-buyer/">arthuruckert.github.io/media-buyer</a></span><span>Remote Worldwide</span>
   </div>
-  <div class="contact"><span>Remote from Brazil (UTC-3)</span></div>
 </header>
 
 <section>
   <h2>PROFESSIONAL SUMMARY</h2>
-  <p>Paid Social Media Buyer and Creative Strategist with 4+ years scaling paid social for DTC e-commerce, lead gen and B2B brands in the US, UK, Europe, Australia and New Zealand, from brands spending $1K to $2K a month to growth accounts at $20K to $100K+. Budgets move on Triple Whale net profit and MER, not pixel ROAS, with CPA ceilings set by market. Core strengths: account structure (consolidated, product-split, cost cap, evergreen plus testing layers) and attribution (click and view windows, Conversions API and server-side tracking, Triple Whale multi-touch).</p>
-  <p>At SDW Group the role is hybrid by design: I own the Meta buying and lead creative direction for 4 DTC brands. I write the briefs, templates and samples, run the creative testing roadmap and brief a 4-person creative team every week from what is selling. One angle and one persona per creative, persona-led hooks for Meta Andromeda, one lever changed per iteration. Every brief starts from two inputs: that week's winners and competitor research in Trendtrack, Foreplay and the Meta Ad Library.</p>
-  <p>60+ brands managed so far. Claude Code runs the repetitive side (dashboards, automated reports, pixel and naming QA, bulk launches). Case studies and screenshots: <a href="https://arthuruckert.github.io/media-buyer/">arthuruckert.github.io/media-buyer</a>.</p>
+  <p>Meta Media Buyer with 4+ years scaling paid social for DTC e-commerce, lead gen and B2B brands in the US, Europe and Australia, from small brands at $1K to $2K a month to enterprise accounts at around $500K a month. I don't just buy media. I direct the creative from the data: every account runs on a test-to-scale system where new creatives are tested in ad packs, winners graduate to their own campaigns, and each iteration keeps the validated base and tests a new hook.</p>
+  <p>Core strengths: account structure (consolidated, product-split, cost cap, evergreen plus testing layers) and attribution (Conversions API, server-side tracking, Triple Whale). 60+ brands managed.</p>
 </section>
 
 <section class="skills">
   <h2>SKILLS &amp; TOOLS</h2>
-  <p><b>Creative Strategy:</b> test-to-scale framework (CT to CV, ad packs, concept vs variation tests, kill and revival rules), hypothesis-driven creative testing, hook vs body diagnosis (hook rate, hold rate), creative analytics (CPA, ROAS and CTR per creative, creative fatigue), angles, hooks, personas and messaging pillars (one angle per creative, persona-led hooks for Meta Andromeda), creative briefs, templates and samples, weekly iteration briefs, UGC strategy and creator testing, statics and video, competitor research and swipe files (Trendtrack, Foreplay, Meta Ad Library, Motion), offer, landing page, listicle and advertorial alignment, high-volume launches (201 ads in one push)</p>
-  <p><b>Paid Social:</b> Meta Ads (Facebook &amp; Instagram Ads, Advanced), Advantage+ Sales campaigns, catalog and dynamic product ads (DPA), broad targeting, custom and lookalike audiences, retargeting, cost cap and bid cap scaling, CBO/ABO structures, TikTok Ads (Intermediate)</p>
-  <p><b>Tracking &amp; Data:</b> Triple Whale (blended ROAS, MER, net profit, creative and channel reporting), Meta Pixel, Conversions API (CAPI), server-side tracking (Stape, Google Tag Manager), Google Analytics 4 (GA4), cohort analysis, KPI reporting (CPA, CAC, ROAS, MER, CPL, CPM, CTR, AOV, net profit)</p>
-  <p><b>Claude Code &amp; Automation:</b> Meta Ads and Triple Whale data scripts, automated dashboards and reports, pixel and naming QA, bulk ad launch prep, AI-assisted hook analysis</p>
-  <p><b>Funnel &amp; Strategy:</b> full-funnel paid social (prospecting, retargeting, catalog remarketing), lead gen and VSL funnels</p>
-  <p><b>Platforms:</b> Meta Ads Manager, Meta Business Suite, Meta Ad Library, TikTok Ads Manager, Triple Whale, Shopify, Motion, Foreplay, Trendtrack, ClickUp, monday.com, Sigma Computing</p>
+  <p><b>Creative Strategy:</b> creative testing framework (concept vs variation, ad packs, creative test to creative validated, winners graduating to their own campaigns), creative metrics (hook rate, hold rate, CTR, CPA per creative, creative fatigue), hooks, angles and messaging (one angle per creative), iteration on winners keeping the validated base, creative briefs, UGC and creator testing, scripts, statics and video, leading a 4-person creative team in ClickUp, competitor research and swipe files (Meta Ad Library, Foreplay, Motion), creative, offer, landing page and advertorial alignment, hook and brief analysis with Claude and Claude Code</p>
+  <p><b>Paid Social:</b> Meta Ads (Facebook &amp; Instagram, Advanced), Advantage+ Sales campaigns, catalog and dynamic product ads, broad targeting, custom and lookalike audiences, retargeting, cost cap and bid cap scaling, CBO/ABO, TikTok Ads</p>
+  <p><b>Tracking &amp; Data:</b> Triple Whale (blended ROAS, MER, net profit), Meta Pixel, Conversions API, server-side tracking (Stape, Google Tag Manager), GA4, Sigma, Shopify, ClickUp, monday.com, Claude Code scripts and automated reports</p>
+</section>
+
+<section>
+  <h2>SELECTED PROJECTS</h2>
+  <ul>
+    <li><b>Trestique (beauty, USA):</b> $1.6M in sales over the last 365 days (+87%) on $882K in blended spend: 1.89x blended ROAS, $608K net profit at a 36.5% net margin, $108 new customer CPA. UGC creator program with new creators tested every month.</li>
+    <li><b>Infamous Paintball (sporting goods, USA):</b> one campaign per product category. 30 days: 1,116 purchases at $8.79 avg CPP and $229K in attributed revenue from $9.8K in spend.</li>
+    <li><b>Effing Gear (workwear, USA):</b> rebuilt 322 campaigns into an evergreen plus testing layer. 30 days: 1,083 purchases at $26 CPP. Blue-collar identity hooks shot as UGC beat branded content.</li>
+    <li><b>Cherub Baby (baby products, Australia):</b> product-level campaigns plus one retargeting layer: AUD $84.8K in gross sales across 784 orders in 30 days, 4.79x ROAS on retargeting.</li>
+  </ul>
 </section>
 
 <section>
   <h2>PROFESSIONAL EXPERIENCE</h2>
 
+  <div class="block group">
+    <div class="row"><div class="co">SDW Group</div><div class="dates">Aug 2025 - Present</div></div>
+    <div class="sub">Contract · New Zealand (Remote)</div>
+    <p class="intro">Multi-brand e-commerce group doing about US$7M to $8M a year in sales, across 8 stores: Astra Straps (US, AU, UK), Astra Cases, Magic Bra (US, UK) and Clara Nutrition (NZ, AU).</p>
+    <div class="role"><div class="row"><span class="t">Paid Social &amp; Creative Strategy Lead</span><span class="dates">May 2026 - Present</span></div>
+      <ul>
+        <li>Lead a 4-person creative team through ClickUp, with up to 33 new creatives launched in a day.</li>
+        <li>Creator testing program: 10 of 12 new creators hit target CPA in a single testing week.</li>
+        <li>Built the Black Friday creative and offer strategy around a tiered buy-more-save-more offer (60% / 63% / 66% off).</li>
+        <li>Launched a top-of-funnel Instagram test to warm cold audiences and lower acquisition cost.</li>
+        <li>Own the creative roadmap per brand: which angles to test next, which winners to scale and which to retire.</li>
+      </ul>
+    </div>
+    <div class="role"><div class="row"><span class="t">Paid Social &amp; Creative Strategist</span><span class="dates">Nov 2025 - Apr 2026</span></div>
+      <ul>
+        <li>Wrote creative briefs with hooks and angles built from performance data, one angle per creative.</li>
+        <li>Tested creatives in ad packs and moved validated winners into their own campaigns.</li>
+        <li>Weekly winner briefs and iteration on validated creatives, keeping the winning base and testing new hooks.</li>
+        <li>Daily store-by-store reporting (sales, spend, CPA, top creatives) to guide the creative team.</li>
+      </ul>
+    </div>
+    <div class="role"><div class="row"><span class="t">Meta Media Buyer</span><span class="dates">Aug 2025 - Oct 2025</span></div>
+      <ul>
+        <li>Rebuilt the accounts on bid caps and cost caps instead of budget scaling.</li>
+        <li>Astra Straps became the group's best performer: US blended ROAS above 2x, Australia from ~0.8x Facebook ROAS at kickoff to ~1.6x blended, and revenue up 35% month over month.</li>
+        <li>Astra Cases: the remarketing catalog cut US CPA from NZ$87 to NZ$17 and drove 18 sales in a single day across AU, UK, US and NZ at NZ$16.21 CPA.</li>
+        <li>Rules-based optimization per store: red, amber and green budget status, market-specific CPA ceilings, 15% budget steps, 10% bid cap steps, plus a group-wide campaign naming system.</li>
+      </ul>
+    </div>
+  </div>
+
   <div class="block">
-    <div class="row"><div class="co">SDW Group · <span class="t">Paid Social Media Buyer + Creative Strategist (hybrid, full-time contractor)</span></div><div class="dates">Nov 2025 to Present</div></div>
-    <div class="sub">Multi-brand DTC e-commerce group (about US$7M to $8M a year) · 8 stores · New Zealand (Remote)</div>
-    <div class="sub">Media Buyer (Nov 2025 to Jan 2026), then Paid Social Media Buyer + Creative Strategist (Feb 2026 to Present)</div>
+    <div class="row"><div class="co">Media Buyer, Paid Social · Goodway Group</div><div class="dates">Jul 2026 - Present</div></div>
+    <div class="sub">Full-time · United States (Remote)</div>
+    <p class="intro">Meta Ads for enterprise, multi-location brands at a US-based media agency, including Urban Air Adventure Park and Water Wings Swim School.</p>
     <ul>
-      <li>Lead creative direction for Astra Straps, Magic Bra, Astra Cases and Clara Nutrition across 8 stores (US, UK, AU, NZ): decide what gets made, write the briefs and own the creative testing roadmap, while running the Meta buying.</li>
-      <li>Brief a 4-person creative team in ClickUp from each week's winners: 21 requests and about 120 creatives in 10 days. Built the brief templates and samples the team works from. House rules: one angle per creative, up to 4 hooks, real footage over AI, no discount in the hook.</li>
-      <li class="fill">Creatives I briefed have driven [PREENCHER: nº de pedidos] orders and [PREENCHER: receita] in revenue in Triple Whale ([PREENCHER: período]).</li>
-      <li>Every test isolates one lever (hook, angle or format) against a validated concept. Creatives start in CT campaigns and graduate to their own CV campaigns once they sell under the CPA ceiling. Kill rule at 2x the ticket with no sale, plus a revival test for underspent creatives.</li>
-      <li>Iteration from winners: ECHO-VIDEOAD004-H2 (33 sales at NZ$34.94 CPA) briefed into 3 new hooks and an AU cut. 10 of 12 new creatives hit target CPA in one testing week.</li>
-      <li>Competitor research: 20 competitors tracked in Trendtrack, plus Foreplay boards and the Meta Ad Library, logged in a swipe file (days live, angle, transcript). For Clara, scaling competitor offers are remodeled with the same mechanism and hook. 6 Astra Straps concepts were modeled on competitor ads live for 500+ days.</li>
-      <li>Moved Clara Nutrition to direct-response storytelling (story hook, pre-sell, pitch): first profitable sale at about 4x ROAS. Angles built around postpartum depletion, perimenopause and the 3pm wall.</li>
-      <li>A 30-day winners analysis showed on-wrist statics beating talking-head UGC for Astra Straps. The 'Ditch the rubber' pack drove 163 purchases.</li>
-      <li>Media buying: cost caps and bid caps by market (Astra Straps CC NZ$13 to NZ$15 on broad prospecting, CC NZ$37 to NZ$39 on catalog remarketing). Astra Straps became the group's best performer: US revenue up 377% in 30 days, Australia from about 0.8x Facebook ROAS at kickoff to about 1.6x blended.</li>
-      <li>Weekly rules across all stores: cut 30%+ on ad sets under 1.5x ROAS after $50 in 7-day spend, raise winners 15%, pause ads with $50+ spend and no sales, move bid caps in 10% steps. Week of Nov 14 to 20: 340 sales at NZ$40.90 CPA (down 11%).</li>
-      <li>One push on Magic Bra US (Oct 13 to 14) launched 201 ads in 80 ad sets, split by angle with 5 hooks per ad set. BFCM: validated winners re-skinned with the tiered offer and launched in 5 isolated CBOs.</li>
+      <li>Urban Air Adventure Park: around $500K/month in Meta spend across 770+ ad sets. 2026 to date (Jan to Sep): $25.2M in revenue and 114,381 purchases at a $48.33 CPA on $5.5M in spend.</li>
+      <li>September 2026: $3.07M in revenue at 3.99x ROAS and 13,129 purchases, up 9.9% year over year.</li>
+      <li>Location-level account structure: budget split by campaign type (tickets, birthday parties, memberships, grand openings) and funnel stage, strict naming taxonomy, and park-by-park reporting in Sigma dashboards.</li>
+      <li>Use Claude Code to automate recurring work across client accounts, including weekly pixel checks and dashboard QA, so more time goes into creative and budget decisions.</li>
     </ul>
   </div>
 
   <div class="block">
-    <div class="row"><div class="co">Goodway Group · <span class="t">Media Coordinator, Media Activation (Paid Social)</span></div><div class="dates">Jul 2026 to Nov 2026</div></div>
-    <div class="sub">US-based media agency · Full-time · United States (Remote)</div>
+    <div class="row"><div class="co">Media Buyer · Kaizen Marketing</div><div class="dates">May 2026 - Jul 2026</div></div>
+    <div class="sub">Freelance · United States (Remote)</div>
     <ul>
-      <li>Supported Meta activation for enterprise multi-location brands, including Urban Air Adventure Park and Water Wings Swim School.</li>
-      <li>Trafficked and QA'd creative rollouts across 185 park locations (for example, the fall birthday promo) through the monday.com creative and ad ops board.</li>
-      <li>Automated weekly pixel checks and dashboard QA with Claude Code.</li>
+      <li>Managed 10 to 15 active client accounts per month at a US-based performance marketing agency, including e-commerce brands such as Ocean Box, Fresh Mellow and Han of Sonoma across D2C and CPG categories.</li>
+      <li>Ran the full Meta Ads operation for each account: campaign structure, audience segmentation, creative testing, budget optimization, and weekly reports with clear next steps for each brand.</li>
     </ul>
   </div>
 
   <div class="block">
-    <div class="row"><div class="co">Kaizen Marketing · <span class="t">Media Buyer</span></div><div class="dates">May 2026 to Jul 2026</div></div>
-    <div class="sub">US-based performance marketing agency · Full-time · United States (Remote)</div>
+    <div class="row"><div class="co">Senior Media Buyer · Pickmybrain.com</div><div class="dates">Sep 2025 - Apr 2026</div></div>
+    <div class="sub">Full-time · Silicon Valley (Remote)</div>
     <ul>
-      <li>Managed 10 to 15 active client accounts per month, including e-commerce brands such as OceanBox, Goodmellow and Han of Sonoma across D2C and CPG.</li>
-      <li>Got the role through a creative-led test project: audits, 30/60-day roadmaps and creative briefs for OceanBox (fourth-generation family story with real faces, expert content and customer UGC) and Goodmellow (founder story with THC-compliant angles).</li>
-      <li>Ran the full Meta Ads operation per account: structure, audience segmentation, creative testing and iteration on winners, budget optimization and weekly reports with the next creatives to test.</li>
+      <li>Managed Meta Ads campaigns on a EUR 350 to 380/week budget for an AI expert-matching platform targeting the U.S., Canada, Europe and Australia.</li>
+      <li>Scaled the platform from 0 to 5,200 followers and 500 active paid subscriptions through structured acquisition funnels and creative-led growth.</li>
+      <li>Found a critical attribution gap (only ~7 to 14% of conversions tracked) and proposed a server-side fix via Stape + GTM + Conversions API.</li>
+      <li>Built custom dashboards and automated reporting in Claude Code on top of Meta Ads data, giving the team real-time campaign views and cutting manual reporting time.</li>
     </ul>
   </div>
 
   <div class="block">
-    <div class="row"><div class="co">Pick My Brain (WOIS) · <span class="t">Senior Media Buyer</span></div><div class="dates">Sep 2025 to Apr 2026</div></div>
-    <div class="sub">AI expert-matching platform · Full-time · Silicon Valley, US (Remote)</div>
+    <div class="row"><div class="co">Media Buyer · Traffic Raptors</div><div class="dates">Jan 2025 - Aug 2025</div></div>
+    <div class="sub">Full-time · Amsterdam, Netherlands (Remote)</div>
     <ul>
-      <li>Ran Meta Ads on a EUR 350 to 380 a week budget across 4 markets (US, Canada, Europe, Australia).</li>
-      <li>Took the platform from 0 to 5,200 followers and 500 active paid subscriptions with a creative-led, two-step funnel: educational awareness content first, then retargeting creatives for engaged users.</li>
-      <li>Found a critical attribution gap (only about 7 to 14% of conversions were tracked) and proposed a server-side fix with Stape, GTM and the Conversions API.</li>
+      <li>Managed nutraceutical campaigns in the U.S., Canada, Europe and Australia with daily spend of $1,500 to $5,000.</li>
+      <li>Held 3.4x to 5.3x ROAS across three product bundles (1-unit, 3-unit and 6-unit offers), adjusting offer mix and creative per market.</li>
+      <li>Built data analysis scripts in Claude Code for cross-market ROAS tracking and creative reporting, which sped up campaign decisions.</li>
     </ul>
   </div>
 
   <div class="block">
-    <div class="row"><div class="co">Traffic Raptors · <span class="t">Media Buyer</span></div><div class="dates">Jan 2025 to Aug 2025</div></div>
-    <div class="sub">Full-time · Amsterdam, NL (Remote)</div>
+    <div class="row"><div class="co">AGCO Corporation</div><div class="dates">Aug 2021 - Dec 2024</div></div>
+    <div class="sub">Full-time · Canoas, Brazil (Remote)</div>
     <ul>
-      <li>Ran nutraceutical campaigns in the US, Canada, Europe and Australia at $1,500 to $5,000 a day in spend.</li>
-      <li>Held 3.4x to 5.3x ROAS across three bundles (1, 3 and 6 units), with creatives, copy and angle tests adapted to each market.</li>
-      <li>Built Claude Code scripts for cross-market ROAS tracking and creative reporting.</li>
+      <li><b>Media Buyer</b> (Jan 2024 - Dec 2024): Ran day-to-day digital campaigns for the marketing team, owning budgets, pacing, optimization and performance reporting.</li>
+      <li><b>Junior Media Buyer</b> (Aug 2022 - Dec 2023): Handled campaign setup, budget monitoring, pacing adjustments and performance tracking alongside senior team members, plus campaign documentation and internal reports.</li>
+      <li><b>Production Line Assembler</b> (Aug 2021 - Jul 2022): Started on the assembly line and moved into the marketing team out of interest in digital advertising.</li>
     </ul>
   </div>
 
   <div class="block">
-    <div class="row"><div class="co">Freelance · <span class="t">Media Buyer, own clients</span></div><div class="dates">Jan 2023 to Dec 2024</div></div>
-    <div class="sub">D2C fashion e-commerce · Remote</div>
+    <div class="row"><div class="co">Freelance Media Buyer · Self-employed</div><div class="dates">Jan 2023 - Dec 2024</div></div>
+    <div class="sub">Freelance · Remote</div>
+    <p class="intro">Meta Ads for my own D2C fashion and e-commerce clients.</p>
     <ul>
-      <li>Women's fashion D2C brand: owned Meta Ads on about $20K to $24K a month (up to about $30K for Black Friday and launches), with a full-funnel structure (prospecting, retargeting, win-back) and briefs, hooks and formats per stage.</li>
-      <li>Women's fashion e-commerce brand: scaled monthly revenue more than 10x (from about $6K to about $64K) at 8.8x to 10x ROAS with a full-funnel rebuild and UGC-style creatives.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">AGCO Corporation · <span class="t">Production Line Assembler → Junior Media Buyer → Media Buyer</span></div><div class="dates">Aug 2021 to Dec 2024</div></div>
-    <div class="sub">US-based global manufacturer · Full-time</div>
-    <ul>
-      <li>Media Buyer (Jan 2024 to Dec 2024): ran day-to-day digital campaigns: budgets, pacing, optimization and reporting.</li>
-      <li>Junior Media Buyer (Aug 2022 to Dec 2023): campaign setup, budget monitoring, pacing, performance tracking and internal reports with senior team members.</li>
-      <li>Production Line Assembler (Aug 2021 to Jul 2022): started on the assembly line and moved into the marketing team out of interest in digital advertising.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>SELECTED PROJECTS</h2>
-
-  <div class="block">
-    <div class="row"><div class="co">Trestique · <span class="t">Beauty e-commerce · USA</span></div><div class="dates">Meta Ads</div></div>
-    <ul>
-      <li>Scaled a premium US beauty brand to $812K YTD in sales (+161%) with 1.90x Meta ROAS ($812K sales on $448K spend) and $309K net profit at a 36% margin.</li>
-      <li>Built a UGC creator program with new creators sourced and tested every month, one angle per creative, winners scaled. Cold traffic (Advantage+) runs separately from warm retargeting.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">Astra Straps &amp; Astra Cases · <span class="t">Watch bands and phone cases · US, AU, UK, NZ</span></div><div class="dates">SDW Group</div></div>
-    <ul>
-      <li>Scaled the US store to US$158.9K in 30-day revenue (+377%) at 2.34x ROAS and US$27.7K net profit (+356%), at about 17% net margin. A parallel Australian account added A$46.9K at 2.10x ROAS.</li>
-      <li>Cost caps instead of budget scaling: CC NZ$13 to NZ$15 on broad prospecting, CC NZ$37 to NZ$39 on catalog remarketing. 144 campaigns tested, best creative at 5.73x ROAS, 60 new ads in one Astra Straps launch.</li>
-      <li>Astra Cases: the remarketing catalog cut US CPA from NZ$87 to NZ$17 and drove 18 sales in one day across AU, UK, US and NZ at NZ$16.21 CPA.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">Effing Gear · <span class="t">Workwear e-commerce · USA</span></div><div class="dates">Meta Ads</div></div>
-    <ul>
-      <li>Rebuilt an account of 322 campaigns into an evergreen layer plus a testing layer. In 30 days: 1,083 purchases at $26 CPP and $47K in revenue from $28K in spend.</li>
-      <li>Identity hooks built around blue-collar pride, shot as UGC, beat branded content in every ad set. Best campaign: 471 purchases at $22.71 CPP.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">Infamous Paintball · <span class="t">Sporting goods e-commerce · USA</span></div><div class="dates">Meta Ads</div></div>
-    <ul>
-      <li>One campaign per product category across 54 active campaigns. 30 days: 1,116 purchases at $8.79 avg CPP and $229K in attributed revenue from $9.8K in spend. In Motion, the top creative held 148x ROAS six months in.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">Eric Rich · <span class="t">High-ticket coaching · USA</span></div><div class="dates">Meta Ads</div></div>
-    <ul>
-      <li>Built the "Income Seeker" VSL series for an $8K high-ticket coaching program (real estate and surplus funds), one angle per video: 1,003 webinar signups and 547 booked sales calls on $34K in April, best VSL at $4.87 CPL.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">Cherub Baby · <span class="t">Baby products e-commerce · Australia</span></div><div class="dates">Meta Ads</div></div>
-    <ul>
-      <li>Product-level campaigns (SmartFlask, Food Pouches, FreshFeeder, Breast Milk Storage, Thermometer), each with its own creatives, plus one BOF retargeting layer: AUD $84.8K in gross sales across 784 orders in 30 days (about AUD $108 per order), 4.79x ROAS on retargeting.</li>
-    </ul>
-  </div>
-
-  <div class="block">
-    <div class="row"><div class="co">Urban Air Adventure Park · <span class="t">Multi-location entertainment · USA</span></div><div class="dates">Goodway Group</div></div>
-    <div class="ctx">Account context · Media Coordinator at Goodway Group</div>
-    <ul>
-      <li>Account figures, most of them before my start: about $5.5M in Meta spend Jan to Sep 2026 (about $614K a month) across 770+ ad sets, 114,381 purchases at a $48.33 CPA and $25.2M in revenue. My part: creative trafficking and QA across 185 parks, and pixel QA.</li>
+      <li>Women's fashion D2C brand: owned the full Meta Ads operation on monthly budgets of about $20K to $24K, scaling to about $30K for Black Friday and seasonal launches, with a full-funnel structure (cold prospecting, warm retargeting, win-back) and creative briefs for each stage.</li>
+      <li>Women's fashion e-commerce brand: scaled monthly revenue more than 10x (from about $6K to about $64K) at 8.8x to 10x ROAS with a full-funnel rebuild and UGC-style creatives, and grew Instagram from 10K to 50K followers.</li>
     </ul>
   </div>
 </section>
 
 <section class="block">
   <h2>EDUCATION, CERTIFICATIONS &amp; LANGUAGES</h2>
-  <p>HubSpot Digital Marketing Certified, HubSpot Academy · Google Analytics 4 (GA4), Google Training · Meta Blueprint Certification, in progress</p>
-  <p class="lang">Portuguese (Native) | English (C1, Advanced) | Spanish (Intermediate)</p>
+  <p>Meta Blueprint Certification, in progress · TikTok Ads Certification (TikTok Academy), in progress · Google Analytics 4 (GA4), Google Training</p>
+  <p>Portuguese (Native) | English (C1, Advanced) | Spanish (Intermediate)</p>
 </section>
 
 </body>
