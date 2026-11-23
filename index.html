@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur Rückert · Senior Meta Media Buyer · Creative Strategy</title>
-  <meta name="description" content="Senior Meta media buyer with a creative strategy edge, scaling DTC brands on a CPA target. $25.2M revenue on Meta this year at a $48.33 CPA across $5.5M spend. Real Ads Manager data. 4+ years, 60+ brands.">
+  <title>Arthur Rückert · Senior Meta Media Buyer + Creative Strategist</title>
+  <meta name="description" content="Senior Meta media buyer and creative strategist for DTC e-commerce in the US, UK, AU and NZ. Test-to-scale systems and briefs built from winners. Real Ads Manager and Triple Whale data. 4+ years, 60+ brands.">
   <meta name="theme-color" content="#06070a">
-  <meta property="og:title" content="Arthur Rückert · CPA-first Meta Ads">
-  <meta property="og:description" content="I buy customers at a price that makes money. $25.2M on Meta this year at a $48.33 CPA. Real Ads Manager data.">
+  <meta property="og:title" content="Arthur Rückert · Meta Media Buyer + Creative Strategist">
+  <meta property="og:description" content="I buy customers at a price that makes money. And I tell the creative team exactly what to make next.">
   <meta property="og:image" content="assets/arthur.jpg">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -345,6 +345,52 @@
       .reveal, .stagger > *, .hero-in { opacity: 1; transform: none; } html { scroll-behavior: auto; }
     }
 
+    /* ---------- CREATIVES ---------- */
+    .h1-sub { font-family: var(--head); font-size: clamp(19px, 2vw, 25px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; color: var(--text); margin-top: 18px; }
+    .ctx-label { display: inline-block; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--amber); border: 1px solid rgba(255,184,107,0.35); background: rgba(255,184,107,0.08); padding: 4px 9px; border-radius: 6px; margin: 4px 0 14px; }
+    .cr-totals { display: grid; grid-template-columns: repeat(3, 1fr) auto; gap: 12px; margin-top: 40px; align-items: stretch; }
+    .cr-totals .cell { padding: 20px; }
+    .cr-totals .proof { display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+    .cr-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 40px; counter-reset: step; }
+    .cr-step { position: relative; border: 1px solid var(--line); border-radius: var(--r); padding: 20px 20px 22px; background: rgba(255,255,255,0.02); }
+    .cr-step .n { font-family: var(--mono); font-size: 11px; color: var(--cyan); }
+    .cr-step h3 { font-family: var(--head); font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin: 8px 0 6px; }
+    .cr-step p { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+    .cr-step:not(:last-child)::after { content: '→'; position: absolute; right: -11px; top: 50%; transform: translateY(-50%); font-family: var(--mono); font-size: 13px; color: var(--dim); background: var(--bg); padding: 2px 0; z-index: 2; }
+    .cr-log { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+    .cr-log .cell .v { font-size: clamp(26px, 2.6vw, 36px); }
+    .cr-src { font-family: var(--mono); font-size: 11px; color: var(--dim); margin-top: 10px; }
+    .cr-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; align-items: center; }
+    .cr-filters .lbl { font-family: var(--mono); font-size: 11px; color: var(--dim); margin-right: 4px; }
+    .cr-filters .sep { width: 1px; height: 20px; background: var(--line-2); margin: 0 6px; }
+    .cr-filters button { font-family: var(--mono); font-size: 11.5px; padding: 6px 10px; border-radius: 7px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); color: var(--muted); cursor: pointer; }
+    .cr-filters button.on { color: var(--cyan); border-color: rgba(62,230,255,0.45); background: var(--cyan-dim); }
+    .cr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    .cr-card { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--r); background: rgba(255,255,255,0.025); overflow: hidden; }
+    .cr-card[hidden] { display: none; }
+    .cr-media { position: relative; aspect-ratio: 4/5; background: var(--bg-2); border-bottom: 1px solid var(--line); }
+    .cr-media img, .cr-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cr-media .fmt { position: absolute; top: 10px; left: 10px; font-family: var(--mono); font-size: 10.5px; padding: 3px 7px; border-radius: 6px; background: rgba(6,7,10,0.78); border: 1px solid var(--line-2); color: var(--text); }
+    .cr-body { padding: 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .cr-body .who { font-family: var(--mono); font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.4px; }
+    .cr-body .hook { font-family: var(--head); font-size: 17px; font-weight: 600; line-height: 1.3; letter-spacing: -0.01em; }
+    .cr-body dl { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: 13px; }
+    .cr-body dt { font-family: var(--mono); font-size: 11px; color: var(--dim); padding-top: 2px; }
+    .cr-body dd { color: var(--muted); }
+    .cr-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .cr-stats div { border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+    .cr-stats .l { font-family: var(--mono); font-size: 10px; color: var(--dim); text-transform: uppercase; }
+    .cr-stats .v { font-family: var(--head); font-weight: 700; font-size: 15px; color: var(--cyan); font-variant-numeric: tabular-nums; margin-top: 2px; }
+    .cr-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+    .cr-actions button, .cr-actions a { font-family: var(--mono); font-size: 11px; padding: 6px 9px; border-radius: 7px; background: rgba(255,255,255,0.04); border: 1px solid var(--line-2); color: var(--text); cursor: pointer; text-decoration: none; }
+    .cr-actions .tw { color: var(--cyan); border-color: rgba(62,230,255,0.45); }
+    .cr-learn { font-size: 13px; color: var(--muted); border-top: 1px dashed var(--line-2); padding-top: 10px; margin-top: auto; }
+    .cr-learn b { color: var(--text); font-weight: 600; }
+    .cr-brief { grid-column: span 1; }
+    .cr-brief pre { font-family: var(--mono); font-size: 12px; line-height: 1.7; color: var(--muted); white-space: pre-wrap; padding: 18px; flex: 1; }
+    .cr-brief pre .k { color: var(--cyan); }
+    .cr-brief .hd { padding: 14px 18px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 11.5px; color: var(--dim); display: flex; justify-content: space-between; }
+
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 960px) {
       .navlinks { display: none; } .burger { display: flex; }
@@ -356,6 +402,8 @@
       .case-photo img { aspect-ratio: 16/10; }
       .shots { grid-template-columns: 1fr; }
       .cpa-grid, .logs { grid-template-columns: 1fr; }
+      .cr-steps { grid-template-columns: 1fr 1fr; } .cr-step:not(:last-child)::after { display: none; }
+      .cr-grid, .cr-log { grid-template-columns: 1fr 1fr; } .cr-totals { grid-template-columns: 1fr 1fr; }
       .logs > .log:last-child:nth-child(odd) { flex-direction: column; }
       .logs > .log:last-child:nth-child(odd) .im { width: 100%; height: 170px; border-right: 0; border-bottom: 1px solid var(--line); }
       .sv-grid { grid-template-columns: 1fr; } .sv-grid .sec-head { position: static; }
@@ -366,6 +414,7 @@
     @media (max-width: 560px) {
       .cell.c4, .cell.c3, .cell.c6, .cell.c8 { grid-column: span 12; }
       .metrics { gap: 8px; }
+      .cr-steps, .cr-grid, .cr-log, .cr-totals { grid-template-columns: 1fr; }
       .heroctas .btn, .cta-actions .btn { width: 100%; justify-content: center; }
       .kpis { grid-template-columns: 1fr 1fr; }
       .panel-bar .tags { margin-left: 0; width: 100%; }
@@ -384,6 +433,7 @@
   <div class="navin">
     <a class="logo" href="#top"><span class="mark">AR</span>arthur<span class="slash">/</span>ruckert</a>
     <div class="navlinks" id="navlinks">
+      <a href="#creatives">creatives</a>
       <a href="#cases">cases</a>
       <a href="#cpa">why-cpa</a>
       <a href="#portfolio">portfolio</a>
@@ -399,11 +449,12 @@
 </nav>
 
 <div id="mobile-menu">
-  <a href="#cases">Case studies <span class="mono">01</span></a>
-  <a href="#cpa">Why CPA <span class="mono">02</span></a>
-  <a href="#portfolio">Portfolio <span class="mono">03</span></a>
-  <a href="#services">Services <span class="mono">04</span></a>
-  <a href="#about">About <span class="mono">05</span></a>
+  <a href="#creatives">Creatives <span class="mono">01</span></a>
+  <a href="#cases">Case studies <span class="mono">02</span></a>
+  <a href="#cpa">Why CPA <span class="mono">03</span></a>
+  <a href="#portfolio">Portfolio <span class="mono">04</span></a>
+  <a href="#services">Services <span class="mono">05</span></a>
+  <a href="#about">About <span class="mono">06</span></a>
   <div class="mm-cta"><a class="btn primary big js-contact" href="#contact">Message me <span class="arr">→</span></a></div>
 </div>
 
@@ -411,38 +462,39 @@
   <div class="wrap">
     <div class="hero">
       <div>
-        <div class="kicker hero-in">~/meta-ads <span class="cur"></span> paid social · USA, Europe & Australia</div>
+        <div class="kicker hero-in">~/meta-ads <span class="cur"></span> meta buying + creative strategy · US, UK, AU & NZ</div>
         <h1 class="hero-in d1">I buy customers at a price that <span class="hl">makes money.</span></h1>
-        <p class="lead hero-in d2">I'm Arthur Rückert, senior Meta media buyer with a creative strategy edge. <strong>4+ years, 60+ brands, $5.5M in Meta spend this year on a single account, about $500K a month.</strong> Every account I run is built around one number: cost per acquisition. Full-funnel structures, a test-to-scale creative system (CT to CV, one angle per creative, new hooks on validated winners), and scaling rules that keep CPA flat while budget grows. Every figure on this page comes straight from Ads Manager and TripleWhale.</p>
+        <p class="h1-sub hero-in d1">And I tell the creative team exactly what to make next.</p>
+        <p class="lead hero-in d2">I'm Arthur Rückert, senior Meta media buyer and creative strategist for DTC e-commerce. <strong>4+ years, 60+ brands. Today I run the Meta buying and lead creative direction for 4 DTC brands across 8 stores (US, UK, AU, NZ).</strong> Budgets move on Triple Whale net profit and MER, not pixel ROAS, with CPA ceilings set by market. Every figure on this page comes from Ads Manager and Triple Whale.</p>
         <div class="heroctas hero-in d3">
           <a class="btn primary js-contact" href="#contact">Message me <span class="arr">→</span></a>
           <a class="btn ghost" href="#cases">See the data <span class="k">↓</span></a>
           <a class="btn ghost" href="assets/Arthur-Ruckert-CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         </div>
         <div class="hero-meta hero-in d4">
-          <span><b>$25.2M</b> revenue on Meta · 2026</span>
-          <span><b>$48.33</b> CPA at $5.5M spend</span>
-          <span><b>114,381</b> purchases</span>
+          <span><b>201 ads</b> in one push · Magic Bra US</span>
+          <span><b>~120</b> creatives briefed in 10 days</span>
+          <span><b>$812K</b> Trestique sales YTD</span>
         </div>
       </div>
       <div class="hero-in d5" style="position: relative;">
-        <div class="dash-float a"><b>60 ads</b> launched in one round</div>
-        <div class="dash-float b">cost cap <b>$13 to $15</b> · prospecting</div>
+        <div class="dash-float a"><b>201 ads</b> in one push · Magic Bra US</div>
+        <div class="dash-float b">cost cap <b>NZ$13 to NZ$15</b> · prospecting</div>
         <div class="dash">
-          <div class="dash-bar"><span class="dots"><i></i><i></i><i></i></span><span class="title">urban-air · meta · 2026-ytd</span><span class="live"><i></i>live</span></div>
+          <div class="dash-bar"><span class="dots"><i></i><i></i><i></i></span><span class="title">trestique · triple whale · 2026-ytd</span><span class="live"><i></i>live</span></div>
           <div class="dash-body">
             <div class="dash-row">
               <img src="assets/arthur.jpg" alt="Arthur Rückert" fetchpriority="high">
-              <div><div class="who">Arthur Rückert</div><div class="what">media buyer · cpa-first · sigma + ads manager</div></div>
+              <div><div class="who">Arthur Rückert</div><div class="what">media buyer + creative direction · cpa-first</div></div>
             </div>
             <div class="kpis">
-              <div class="kpi"><div class="l">Spend</div><div class="v" data-count="5.53" data-prefix="$" data-suffix="M" data-dec="2">$5.53M</div><div class="d">meta only</div></div>
-              <div class="kpi hl"><div class="l">CPA</div><div class="v" data-count="48.33" data-prefix="$" data-dec="2">$48.33</div><div class="d">target held YTD</div></div>
-              <div class="kpi"><div class="l">Purchases</div><div class="v" data-count="114381">114,381</div><div class="d">▲ jan to sep</div></div>
-              <div class="kpi"><div class="l">Revenue</div><div class="v" data-count="25.2" data-prefix="$" data-suffix="M" data-dec="1">$25.2M</div><div class="d">▲ 4.55x roas</div></div>
+              <div class="kpi"><div class="l">Sales YTD</div><div class="v" data-count="812" data-prefix="$" data-suffix="K">$812K</div><div class="d">▲ +161%</div></div>
+              <div class="kpi hl"><div class="l">Net profit YTD</div><div class="v" data-count="309" data-prefix="$" data-suffix="K">$309K</div><div class="d">36% margin</div></div>
+              <div class="kpi"><div class="l">Ad spend YTD</div><div class="v" data-count="448" data-prefix="$" data-suffix="K">$448K</div><div class="d">1.90x meta roas</div></div>
+              <div class="kpi"><div class="l">Blended ROAS</div><div class="v" data-count="2.04" data-dec="2">2.04</div><div class="d">last 30 days</div></div>
             </div>
             <div class="spark">
-              <div class="l"><span>revenue / month</span><span>sep: $3.07M</span></div>
+              <div class="l"><span>sales ytd · +161%</span><span>last 30d: $87.8K</span></div>
               <svg viewBox="0 0 400 64" preserveAspectRatio="none" aria-hidden="true">
                 <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3ee6ff" stop-opacity="0.35"/><stop offset="1" stop-color="#3ee6ff" stop-opacity="0"/></linearGradient></defs>
                 <path class="area" d="M0,50 L50,44 L100,46 L150,34 L200,30 L250,22 L300,26 L350,14 L400,10 L400,64 L0,64 Z"/>
@@ -459,12 +511,12 @@
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track" id="ticker">
-    <div class="tk"><img src="assets/ua-logo-white.png" alt="">Urban Air <b>$48.33 CPA</b> <span class="up">▲ $25.2M</span></div>
+    <div class="tk"><img class="white" src="assets/magic-logo.png" alt="">Magic Bra US <b>201 ads</b> <span class="up">▲ one push</span></div>
     <div class="tk"><img src="assets/trestique_icon.jpg" alt="">Trestique <b>$812K YTD</b> <span class="up">▲ +161%</span></div>
     <div class="tk"><img class="dark" src="assets/infamous-logo.png" alt="">Infamous <b>$8.79 CPP</b> <span class="up">▲ 23x</span></div>
     <div class="tk"><img class="white" src="assets/eg-logo.png" alt="">Effing Gear <b>$26 CPP</b> <span class="up">▲ 1,083 orders</span></div>
     <div class="tk"><img class="white" src="assets/cb_logo.jpg" alt="">Cherub Baby <b>AUD $85K/mo</b> <span class="up">▲ 784 orders</span></div>
-    <div class="tk"><img class="white" src="assets/astra_logo.png" alt="">Astra Straps <b>CC $13 to $15</b> <span class="up">▲ +377%</span></div>
+    <div class="tk"><img class="white" src="assets/astra_logo.png" alt="">Astra Straps <b>CC NZ$13 to NZ$15</b> <span class="up">▲ +377%</span></div>
     <div class="tk"><img class="white" src="assets/magic-logo.png" alt="">Magic Bra <b>£67.4K</b> <span class="up">▲ +320%</span></div>
     <div class="tk"><img src="assets/smoovee_icon.jpg" alt="">Smoovee <b>$33.76 CPP</b> <span class="up">▲ sold out</span></div>
   </div>
@@ -475,20 +527,64 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="sec-kicker"><span class="idx">00</span> the numbers</div>
-      <h2>Real figures. <em>No rounding.</em></h2>
-      <p class="sec-sub">Every data point on this page is pulled from Meta Ads Manager, TripleWhale, Sigma and Shopify. Click any screenshot further down to see the source.</p>
+      <h2>Real figures. <em>Real sources.</em></h2>
+      <p class="sec-sub">Every data point on this page is pulled from Meta Ads Manager, Triple Whale, Shopify and ClickUp. Click any screenshot further down to see the source.</p>
     </div>
     <div class="bento stagger">
-      <div class="cell c4"><div class="l">Revenue on Meta · one brand · 2026</div><div class="v">$25.2M</div><div class="s">Jan to Sep, Meta only. 446M impressions, 1.6M site visits.</div><div class="bar"><i style="--w: 92%"></i></div></div>
-      <div class="cell c4"><div class="l">CPA across $5.5M spend</div><div class="v">$48.33</div><div class="s">Held while scaling 770+ ad sets park by park.</div><div class="bar"><i style="--w: 48%"></i></div></div>
-      <div class="cell c4"><div class="l">Purchases YTD</div><div class="v">114,381</div><div class="s">September alone: $3.07M in revenue, top ad set 1,388 tickets.</div><div class="bar"><i style="--w: 76%"></i></div></div>
+      <div class="cell c4"><div class="l">Ads in one push · Magic Bra US</div><div class="v">201</div><div class="s">80 ad sets split by angle, 5 hooks per ad set. Oct 13 to 14, 2026.</div></div>
+      <div class="cell c4"><div class="l">Creatives briefed in 10 days · SDW</div><div class="v">~120</div><div class="s">21 ClickUp requests to a 4-person creative team, each built from that week's winners.</div></div>
+      <div class="cell c4"><div class="l">Trestique sales YTD</div><div class="v">$812K</div><div class="s">+161% growth, $309K net profit at a 36% margin.</div></div>
       <div class="cell c8">
-        <div class="l">Urban Air budget split · by campaign type</div>
-        <div class="v" style="font-size: clamp(22px, 2.4vw, 30px);">86% weighted to lower funnel</div>
-        <div class="split"><i style="width:45%; background: var(--cyan)"></i><i style="width:38%; background: var(--violet)"></i><i style="width:16%; background: var(--amber)"></i><i style="width:1%; background: var(--green)"></i></div>
-        <div class="legend"><span><i style="background: var(--cyan)"></i>Tickets 45%</span><span><i style="background: var(--violet)"></i>Birthday parties 38%</span><span><i style="background: var(--amber)"></i>Memberships 16%</span><span><i style="background: var(--green)"></i>Grand openings</span></div>
+        <div class="l">How budgets move</div>
+        <div class="v" style="font-size: clamp(22px, 2.4vw, 30px);">Net profit and MER, not pixel ROAS</div>
+        <div class="s">Budgets move on Triple Whale net profit and MER, not pixel ROAS, with CPA ceilings set by market. Weekly rules: cut 30%+ under 1.5x after $50 in 7-day spend, raise winners 15%, bid caps in 10% steps.</div>
       </div>
-      <div class="cell c4"><div class="l">Track record</div><div class="v">60+</div><div class="s">brands across e-commerce, SaaS, high-ticket and B2B. USA, Europe, Australia. 4+ years.</div></div>
+      <div class="cell c4"><div class="l">Track record</div><div class="v">60+</div><div class="s">brands across e-commerce, SaaS, high-ticket and B2B. US, UK, Europe, Australia, NZ. 4+ years.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREATIVES -->
+<section id="creatives" class="hr">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker"><span class="idx">01</span> creative strategy</div>
+      <h2>Creatives I wrote. <em>What they sold.</em></h2>
+      <p class="sec-sub">I don't hand the creative team a mood board. I hand them a brief built from what sold last week, one angle and one persona per creative, then I buy the media and read the result. Numbers come from Triple Whale (Triple Attribution + platform view).</p>
+    </div>
+
+    <div class="cr-totals reveal" id="cr-totals" hidden></div>
+
+    <div class="cr-steps stagger">
+      <div class="cr-step"><div class="n">step 01</div><h3>Research winners and competitors</h3><p>This week's top creatives by sales and CPA, plus competitor ads live for months in Trendtrack, Foreplay and the Meta Ad Library.</p></div>
+      <div class="cr-step"><div class="n">step 02</div><h3>Brief one angle, one persona</h3><p>Every request carries one angle, one persona and up to 4 hooks. Real footage over AI, no discount in the hook.</p></div>
+      <div class="cr-step"><div class="n">step 03</div><h3>Test in CT, graduate to CV</h3><p>New creatives launch in creative test campaigns and move to their own scaling campaign once they sell under the CPA ceiling.</p></div>
+      <div class="cr-step"><div class="n">step 04</div><h3>Iterate one lever</h3><p>A winner goes back to the team with one change: a new hook, a new angle or a new format, never all three.</p></div>
+    </div>
+
+    <div class="cr-log stagger">
+      <div class="cell t-silver"><div class="l">Iteration from a winner · Astra</div><div class="v">33 sales</div><div class="s">ECHO-VIDEOAD004-H2 at NZ$34.94 CPA, briefed into 3 new hooks and an AU cut.</div></div>
+      <div class="cell t-silver"><div class="l">Winners analysis · Astra Straps</div><div class="v">163</div><div class="s">purchases from the 'Ditch the rubber' pack, briefed after a 30-day analysis showed on-wrist statics beating talking-head UGC.</div></div>
+      <div class="cell t-lime"><div class="l">Clara Nutrition · new direction</div><div class="v">~4x ROAS</div><div class="s">first profitable sale after the move to direct-response storytelling: story hook, pre-sell, pitch.</div></div>
+    </div>
+    <div class="cr-src">Source: Meta Ads Manager and SDW weekly creative reports, Oct to Nov 2026.</div>
+
+    <div class="cr-filters" id="cr-filters" hidden></div>
+    <div class="cr-grid stagger" id="cr-grid">
+      <article class="cr-card cr-brief" data-brand="*" data-format="*">
+        <div class="hd"><span>brief_template.md</span><span>anonymized</span></div>
+<pre><span class="k">brand / market:</span> [brand] · [US | UK | AU | NZ]
+<span class="k">concept:</span> validated winner to build on
+<span class="k">lever tested:</span> hook | angle | format (one only)
+<span class="k">angle:</span> one angle per creative
+<span class="k">persona:</span> one persona, written in their words
+<span class="k">hooks:</span> H1, H2, H3, H4 (max 4)
+<span class="k">format:</span> static | video | UGC · real footage over AI
+<span class="k">offer rule:</span> no discount in the hook
+<span class="k">launch:</span> CT campaign → CV once CPA &lt; market ceiling
+<span class="k">reference creative:</span> [link]
+<span class="k">author:</span> Arthur Rückert</pre>
+      </article>
     </div>
   </div>
 </section>
@@ -497,53 +593,28 @@
 <section id="cases" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-kicker"><span class="idx">01</span> case studies</div>
+      <div class="sec-kicker"><span class="idx">02</span> case studies</div>
       <h2>Seven accounts. <em>Real screenshots.</em></h2>
-      <p class="sec-sub">From a $5.5M enterprise account to cost-cap stores with a $30 ticket. Each panel shows the structure, what a customer cost, the revenue that followed, and the Ads Manager views to back it up.</p>
+      <p class="sec-sub">From cost-cap stores with a $30 ticket to multi-market DTC groups, plus one enterprise account I supported at Goodway Group (shown as account context). Each panel shows the structure, what a customer cost, the revenue that followed, and the Ads Manager views to back it up.</p>
     </div>
     <div class="case-nav reveal">
-      <a href="#urbanair" class="t-magenta"><i></i>urban-air</a>
       <a href="#trestique" class="t-gold"><i></i>trestique</a>
       <a href="#infamous" class="t-lime"><i></i>infamous</a>
       <a href="#effinggear" class="t-orange"><i></i>effing-gear</a>
       <a href="#cherubbaby" class="t-sky"><i></i>cherub-baby</a>
       <a href="#astrastraps" class="t-silver"><i></i>astra-straps</a>
       <a href="#magicbra" class="t-pink"><i></i>magic-bra</a>
+      <a href="#urbanair" class="t-magenta"><i></i>urban-air · context</a>
     </div>
-
-    <!-- URBAN AIR -->
-    <article class="panel t-magenta reveal" id="urbanair">
-      <div class="panel-bar"><span class="idx">01</span><span class="file">urban-air / meta / 2026-ytd</span><span class="tags"><span class="tag">family entertainment</span><span class="tag">multi-location</span><span class="tag">USA</span></span></div>
-      <div class="panel-body">
-        <div>
-          <div class="brandline"><div class="logo-box"><img loading="lazy" src="assets/ua-logo-white.png" alt="Urban Air Adventure Park"></div><div><div class="bname">Urban Air Adventure Park</div><div class="btag">enterprise · 770+ ad sets · sigma + ads manager</div></div></div>
-          <h2><em>$25.2M in revenue this year.</em><br>114,381 purchases at a $48.33 CPA.</h2>
-          <p class="sec-sub">One of the largest indoor adventure park chains in the US. This is enterprise-scale Meta: 770+ ad sets in rotation under a strict naming taxonomy, budget split by campaign type (Tickets 45%, Birthday parties 38%, Memberships 16%, Grand Openings) and weighted 86% to lower funnel, with performance read park by park. From January to September 2026, Meta alone drove 114,381 purchases and $25.2M in revenue, from 446M impressions and 1.6M site visits. September by itself: $3.07M in revenue at 3.99x, with the top ad set delivering 1,388 ticket purchases.</p>
-          <div class="metrics">
-            <div class="m"><div class="l">Revenue YTD</div><div class="v">$25.2M</div></div>
-            <div class="m"><div class="l">CPA · meta only</div><div class="v">$48.33</div></div>
-            <div class="m"><div class="l">Meta spend YTD</div><div class="v">$5.53M</div></div>
-            <div class="m"><div class="l">Purchases · 4.55x ROAS</div><div class="v">114,381</div></div>
-          </div>
-        </div>
-        <div class="case-photo"><div class="ph"><img loading="lazy" src="assets/ua-cover.jpg" alt="Urban Air Adventure Park go-kart attraction"><span class="tag">enterprise scale</span></div></div>
-      </div>
-      <div class="shots stagger">
-        <figure class="shot full"><img loading="lazy" src="assets/ua-dashboard-ytd.png" alt="Urban Air Meta-only reporting, 2026 year to date: $5.53M spend, $25.2M revenue, 4.55x ROAS"><span class="z">zoom</span></figure>
-        <figure class="shot"><img loading="lazy" src="assets/ua-dashboard.png" alt="Urban Air Meta reporting, September 2026: $3.07M revenue, 3.99x ROAS"><span class="z">zoom</span></figure>
-        <figure class="shot"><img loading="lazy" src="assets/ua-adsets-30d.png" alt="Urban Air ad sets, last 30 days: $628K spent, 39.2M impressions, top ad set 1,388 purchases"><span class="z">zoom</span></figure>
-      </div>
-      <div class="shot-caption">Sigma reporting (Meta only) · Meta Ads Manager: $48.33 CPA and 1.6M site visits year to date</div>
-    </article>
 
     <!-- TRESTIQUE -->
     <article class="panel t-gold reveal" id="trestique">
-      <div class="panel-bar"><span class="idx">02</span><span class="file">trestique / meta / triplewhale</span><span class="tags"><span class="tag">beauty</span><span class="tag">e-commerce</span><span class="tag">USA</span></span></div>
+      <div class="panel-bar"><span class="idx">01</span><span class="file">trestique / meta / triplewhale</span><span class="tags"><span class="tag">beauty</span><span class="tag">e-commerce</span><span class="tag">USA</span></span></div>
       <div class="panel-body">
         <div>
           <div class="brandline"><div class="logo-box round"><img loading="lazy" src="assets/trestique_icon.jpg" alt="Trestique"></div><div><div class="bname">Trestique</div><div class="btag">premium travel makeup · ugc creator program</div></div></div>
           <h2><em>$812K YTD sales</em> · +161% growth.<br>$309K net profit at a 36% margin.</h2>
-          <p class="sec-sub">Premium travel-ready makeup. The account had solid creatives but no structure: CPP rising, acquisition expensive. I built a systematic UGC creator program, split Advantage+ cold traffic from warm retargeting, and scaled Meta spend while keeping a 36% net margin.</p>
+          <p class="sec-sub">Premium travel-ready makeup. The account had solid creatives but no structure: CPP rising, acquisition expensive. I built a systematic UGC creator program, split Advantage+ cold traffic from warm retargeting, and scaled Meta spend while keeping a 36% net margin. Year to date: 1.90x Meta ROAS ($812K sales on $448K spend).</p>
           <div class="metrics">
             <div class="m"><div class="l">YTD sales · +161%</div><div class="v">$812K</div></div>
             <div class="m"><div class="l">Net profit YTD</div><div class="v">$309K</div></div>
@@ -554,17 +625,17 @@
         <div class="case-photo"><div class="ph"><img loading="lazy" src="assets/trestique-cover-brand.png" alt="Trestique products"><span class="tag">ugc program</span></div></div>
       </div>
       <div class="shots stagger">
-        <figure class="shot full"><img loading="lazy" src="assets/trestique-summary-nov9.png" alt="Trestique last 30 days in TripleWhale: $87.8K sales, $35.1K net profit, 2.04 blended ROAS"><span class="z">zoom</span></figure>
+        <figure class="shot full"><img loading="lazy" src="assets/trestique-summary-nov9.png" alt="Trestique last 30 days in Triple Whale: $87.8K sales, $35.1K net profit, 2.04 blended ROAS"><span class="z">zoom</span></figure>
         <figure class="shot full"><img loading="lazy" src="assets/trestique-attribution-nov9.png" alt="Trestique Meta campaign attribution, last 30 days"><span class="z">zoom</span></figure>
-        <figure class="shot"><img loading="lazy" src="assets/trestique-ytd-jun3.png" alt="Trestique YTD results in TripleWhale"><span class="z">zoom</span></figure>
+        <figure class="shot"><img loading="lazy" src="assets/trestique-ytd-jun3.png" alt="Trestique YTD results in Triple Whale"><span class="z">zoom</span></figure>
         <figure class="shot"><img loading="lazy" src="assets/trestique-ugc-gallery.png" alt="Trestique UGC creator gallery"><span class="z">zoom</span></figure>
       </div>
-      <div class="shot-caption">TripleWhale · Meta Ads Manager</div>
+      <div class="shot-caption">Triple Whale · Meta Ads Manager</div>
     </article>
 
     <!-- INFAMOUS -->
     <article class="panel t-lime reveal" id="infamous">
-      <div class="panel-bar"><span class="idx">03</span><span class="file">infamous-paintball / meta / motionapp</span><span class="tags"><span class="tag">sporting goods</span><span class="tag">e-commerce</span><span class="tag">USA</span></span></div>
+      <div class="panel-bar"><span class="idx">02</span><span class="file">infamous-paintball / meta / motionapp</span><span class="tags"><span class="tag">sporting goods</span><span class="tag">e-commerce</span><span class="tag">USA</span></span></div>
       <div class="panel-body">
         <div>
           <div class="brandline"><div class="logo-box dark"><img loading="lazy" src="assets/infamous-logo.png" alt="Infamous Paintball"></div><div><div class="bname">Infamous Paintball</div><div class="btag">$100 to $500+ aov · product-split structure</div></div></div>
@@ -590,7 +661,7 @@
 
     <!-- EFFING GEAR -->
     <article class="panel t-orange reveal" id="effinggear">
-      <div class="panel-bar"><span class="idx">04</span><span class="file">effing-gear / meta / rebuild</span><span class="tags"><span class="tag">workwear</span><span class="tag">e-commerce</span><span class="tag">USA</span></span></div>
+      <div class="panel-bar"><span class="idx">03</span><span class="file">effing-gear / meta / rebuild</span><span class="tags"><span class="tag">workwear</span><span class="tag">e-commerce</span><span class="tag">USA</span></span></div>
       <div class="panel-body">
         <div>
           <div class="brandline"><div class="logo-box white"><img loading="lazy" src="assets/eg-logo.png" alt="Effing Gear"></div><div><div class="bname">Effing Gear</div><div class="btag">blue-collar headwear · 322 → 2 layers</div></div></div>
@@ -615,16 +686,16 @@
 
     <!-- CHERUB BABY -->
     <article class="panel t-sky reveal" id="cherubbaby">
-      <div class="panel-bar"><span class="idx">05</span><span class="file">cherub-baby / meta / shopify</span><span class="tags"><span class="tag">baby products</span><span class="tag">multi-sku</span><span class="tag">Australia</span></span></div>
+      <div class="panel-bar"><span class="idx">04</span><span class="file">cherub-baby / meta / shopify</span><span class="tags"><span class="tag">baby products</span><span class="tag">multi-sku</span><span class="tag">Australia</span></span></div>
       <div class="panel-body">
         <div>
           <div class="brandline"><div class="logo-box white"><img loading="lazy" src="assets/cb_logo.jpg" alt="Cherub Baby"></div><div><div class="bname">Cherub Baby</div><div class="btag">acquisition per sku · single retargeting layer</div></div></div>
-          <h2><em>784 orders a month</em> at a $94 AOV.<br>AUD $85K gross, 4.79x on retargeting.</h2>
-          <p class="sec-sub">Australian multi-SKU baby brand: FreshFeeder, SmartFlask, Food Pouches, Breast Milk Storage, Thermometer. Campaigns were mixing cold traffic with remarketing and cost per order was unstable per SKU. I split acquisition per product line with dedicated creatives and consolidated retargeting into a single layer capturing the entire warm base. Latest 30 days: AUD $84.8K gross sales across 784 orders.</p>
+          <h2><em>784 orders a month</em> at about AUD $108 per order.<br>AUD $85K gross, 4.79x on retargeting.</h2>
+          <p class="sec-sub">Australian multi-SKU baby brand: SmartFlask, Food Pouches, FreshFeeder, Breast Milk Storage, Thermometer. Campaigns were mixing cold traffic with remarketing and cost per order was unstable per SKU. I split acquisition per product line with dedicated creatives and consolidated retargeting into a single layer capturing the entire warm base. Latest 30 days: AUD $84.8K gross sales across 784 orders.</p>
           <div class="metrics">
             <div class="m"><div class="l">Orders · 30d</div><div class="v">784</div></div>
             <div class="m"><div class="l">Gross sales / month</div><div class="v">AUD $85K</div></div>
-            <div class="m"><div class="l">Average order value</div><div class="v">$94</div></div>
+            <div class="m"><div class="l">Average per order</div><div class="v">AUD $108</div></div>
             <div class="m"><div class="l">Best ROAS · retargeting</div><div class="v">4.79x</div></div>
           </div>
         </div>
@@ -641,18 +712,18 @@
 
     <!-- ASTRA STRAPS -->
     <article class="panel t-silver reveal" id="astrastraps">
-      <div class="panel-bar"><span class="idx">06</span><span class="file">astra-straps + astra-cases / meta / cost-caps</span><span class="tags"><span class="tag">watch bands · phone cases</span><span class="tag">e-commerce</span><span class="tag">US / AU / UK / NZ</span></span></div>
+      <div class="panel-bar"><span class="idx">05</span><span class="file">astra-straps + astra-cases / meta / cost-caps</span><span class="tags"><span class="tag">watch bands · phone cases</span><span class="tag">e-commerce</span><span class="tag">US / AU / UK / NZ</span></span></div>
       <div class="panel-body">
         <div>
           <div class="brandline"><div class="logo-box white"><img loading="lazy" src="assets/astra_logo.png" alt="Astra Straps"></div><div><div class="bname">Astra Straps &amp; Astra Cases</div><div class="btag">SDW Group · cost-cap system · 144 campaigns tested · ongoing</div></div></div>
-          <h2><em>Cost caps at $13 to $15.</em><br>$158,948 revenue, $27,764 net profit.</h2>
-          <p class="sec-sub">Premium smart watch bands with a $30 to $50 ticket: zero room for expensive purchases. Instead of budget scaling, the account runs on cost caps: CC $13 to $15 broad prospecting forcing cheap purchases, CC $37 to $39 catalog remarketing on BOF audiences. Creative testing runs in large ad packs (a single launch put 60 new ads live at once across image, video and UGC variations), with winners promoted to dedicated campaigns. The US account scaled to $158.9K revenue (+377%), and a parallel AUS account adds another A$46.9K.</p>
+          <h2><em>Cost caps at NZ$13 to NZ$15.</em><br>NZ$158,948 revenue, NZ$27,764 net profit.</h2>
+          <p class="sec-sub">Premium smart watch bands with a $30 to $50 ticket: zero room for expensive purchases. Instead of budget scaling, the account runs on cost caps: CC NZ$13 to NZ$15 broad prospecting forcing cheap purchases, CC NZ$37 to NZ$39 catalog remarketing on BOF audiences. Creative testing runs in large ad packs (a single Astra Straps launch put 60 new ads live at once across image, video and UGC variations), with winners promoted to dedicated campaigns. The US account scaled to NZ$158.9K revenue (+377%) at about 17% net margin, and a parallel AUS account adds another A$46.9K.</p>
           <p class="sec-sub">The work is ongoing at SDW Group, a multi-brand e-commerce group doing about US$7M to $8M a year. Astra Straps became the group's best performer: US blended ROAS above 2x, Australia from ~0.8x Facebook ROAS at kickoff to ~1.6x blended, and revenue up 35% month over month. Every store runs on fixed weekly rules (cut 30%+ under 1.5x ROAS after $50 in 7-day spend, raise winners 15%, pause ads with $50+ spend and no sales, bid caps in 10% steps). On the sister brand Astra Cases, the remarketing catalog cut US CPA from NZ$87 to NZ$17 and drove 18 sales in a single day across AU, UK, US and NZ at NZ$16.21 CPA, ahead of a tiered Black Friday offer (60% / 63% / 66% off).</p>
-          <p class="sec-sub">The creative side runs on a test-to-scale system: every creative starts in a CT test campaign and graduates to its own CV scaling campaign once it sells under the CPA ceiling. One push on Oct 13 to 14 launched 201 ads across 80 ad sets, split by angle. Creative requests for a 4-person team are written in ClickUp (21 requests and about 120 creatives in ten days), each built from that week's winners and from competitor research in Trendtrack, Foreplay and the Meta Ad Library: one angle per creative, up to 4 hooks, real footage over AI. A winner like ECHO-VIDEOAD004-H2 (33 sales at NZ$34.94 CPA) becomes a brief for 3 new hooks and a new market cut.</p>
+          <p class="sec-sub">The creative side runs on a test-to-scale system: every creative starts in a CT test campaign and graduates to its own CV scaling campaign once it sells under the CPA ceiling. On Magic Bra US, one push on Oct 13 to 14 launched 201 ads across 80 ad sets, split by angle. Creative requests for a 4-person team are written in ClickUp (21 requests and about 120 creatives in ten days), each built from that week's winners and from competitor research in Trendtrack, Foreplay and the Meta Ad Library: one angle per creative, up to 4 hooks, real footage over AI. A winner like ECHO-VIDEOAD004-H2 (33 sales at NZ$34.94 CPA) becomes a brief for 3 new hooks and a new market cut.</p>
           <div class="metrics">
-            <div class="m"><div class="l">Cost cap · prospecting</div><div class="v">$13 to $15</div></div>
-            <div class="m"><div class="l">Revenue · 30d · +377%</div><div class="v">$158.9K</div></div>
-            <div class="m"><div class="l">Net profit · +356%</div><div class="v">$27.7K</div></div>
+            <div class="m"><div class="l">Cost cap · prospecting</div><div class="v">NZ$13 to 15</div></div>
+            <div class="m"><div class="l">Revenue · 30d · +377%</div><div class="v">NZ$158.9K</div></div>
+            <div class="m"><div class="l">Net profit · +356%</div><div class="v">NZ$27.7K</div></div>
             <div class="m"><div class="l">AUS account revenue</div><div class="v">A$46.9K</div></div>
           </div>
         </div>
@@ -660,18 +731,18 @@
       </div>
       <div class="shots stagger">
         <figure class="shot full"><img loading="lazy" src="assets/astra-30d.png" alt="Astra Straps 30-day campaign results in Meta Ads Manager"><span class="z">zoom</span></figure>
-        <figure class="shot full"><img loading="lazy" src="assets/astra-60-ads-launch.png" alt="Astra Straps creative launch: 60 new ads published in one round"><span class="z">zoom</span></figure>
+        <figure class="shot full"><img loading="lazy" src="assets/astra-60-ads-launch.png" alt="Astra Straps creative launch: 60 new ads published in one Astra Straps round"><span class="z">zoom</span></figure>
         <figure class="shot"><img loading="lazy" src="assets/astra-mobile-1.png" alt="Astra Straps CBO scale and prospecting campaigns"><span class="z">zoom</span></figure>
         <figure class="shot"><img loading="lazy" src="assets/astra-mobile-2.png" alt="Astra Straps conversion campaign at NZ$21.11 CPP"><span class="z">zoom</span></figure>
         <figure class="shot"><img loading="lazy" src="assets/astra-mobile-3.png" alt="Astra Straps remarketing campaign at NZ$30.68 CPP"><span class="z">zoom</span></figure>
         <figure class="shot"><img loading="lazy" src="assets/astra-rmkt-card.jpg" alt="Astra Straps remarketing campaign card"><span class="z">zoom</span></figure>
       </div>
-      <div class="shot-caption">Meta Ads Manager · TripleWhale: 60 ads launched in a single round, 16% net margin held at scale</div>
+      <div class="shot-caption">Meta Ads Manager · Triple Whale: 60 ads launched in one Astra Straps round, about 17% net margin held at scale</div>
     </article>
 
     <!-- MAGIC BRA -->
     <article class="panel t-pink reveal" id="magicbra">
-      <div class="panel-bar"><span class="idx">07</span><span class="file">magic-bra / meta / triplewhale</span><span class="tags"><span class="tag">intimates</span><span class="tag">e-commerce</span><span class="tag">UK & US</span></span></div>
+      <div class="panel-bar"><span class="idx">06</span><span class="file">magic-bra / meta / triplewhale</span><span class="tags"><span class="tag">intimates</span><span class="tag">e-commerce</span><span class="tag">UK & US</span></span></div>
       <div class="panel-body">
         <div>
           <div class="brandline"><div class="logo-box white"><img loading="lazy" src="assets/magic-logo.png" alt="Magic Bra"></div><div><div class="bname">Magic Bra</div><div class="btag">front-closure comfort bras · profit-first scaling</div></div></div>
@@ -691,7 +762,32 @@
         <figure class="shot"><img loading="lazy" src="assets/magic-p2.jpg" alt="Magic Bra front-closure bra product shot"><span class="z">zoom</span></figure>
         <figure class="shot"><img loading="lazy" src="assets/magic-p3.jpg" alt="Magic Bra comfort bra product shot"><span class="z">zoom</span></figure>
       </div>
-      <div class="shot-caption">TripleWhale: £67K revenue, net profit up 30x</div>
+      <div class="shot-caption">Triple Whale: £67K revenue, net profit up 30x</div>
+    </article>
+    <!-- URBAN AIR -->
+    <article class="panel t-magenta reveal" id="urbanair">
+      <div class="panel-bar"><span class="idx">07</span><span class="file">urban-air / meta / account-context</span><span class="tags"><span class="tag">account context</span><span class="tag">family entertainment</span><span class="tag">multi-location</span><span class="tag">USA</span></span></div>
+      <div class="panel-body">
+        <div>
+          <div class="brandline"><div class="logo-box"><img loading="lazy" src="assets/ua-logo-white.png" alt="Urban Air Adventure Park"></div><div><div class="bname">Urban Air Adventure Park</div><div class="btag">enterprise · 770+ ad sets · account context</div></div></div>
+          <div class="ctx-label">Account context · Media Coordinator at Goodway Group</div>
+          <h2><em>About $5.5M in Meta spend,</em><br>Jan to Sep 2026.</h2>
+          <p class="sec-sub">One of the largest indoor adventure park chains in the US. I joined Goodway Group in July 2026 as Media Coordinator on Media Activation (Paid Social), supporting Meta activation for enterprise multi-location brands, including Urban Air Adventure Park and Water Wings Swim School. The numbers below are the account's, January to September 2026, and most of that period predates my start: about $5.5M in Meta spend (about $614K a month) across 770+ ad sets, 114,381 purchases at a $48.33 CPA and $25.2M in revenue. My part: trafficking and QA for creative rollouts across 185 parks, and weekly pixel QA automated with Claude Code.</p>
+          <div class="metrics">
+            <div class="m"><div class="l">Account revenue · Jan to Sep</div><div class="v">$25.2M</div></div>
+            <div class="m"><div class="l">Account CPA · meta only</div><div class="v">$48.33</div></div>
+            <div class="m"><div class="l">Account Meta spend</div><div class="v">~$5.5M</div></div>
+            <div class="m"><div class="l">Account purchases</div><div class="v">114,381</div></div>
+          </div>
+        </div>
+        <div class="case-photo"><div class="ph"><img loading="lazy" src="assets/ua-cover.jpg" alt="Urban Air Adventure Park go-kart attraction"><span class="tag">enterprise scale</span></div></div>
+      </div>
+      <div class="shots stagger">
+        <figure class="shot full"><img loading="lazy" src="assets/ua-dashboard-ytd.png" alt="Urban Air Meta-only reporting, 2026 year to date: $5.53M spend, $25.2M revenue, 4.55x ROAS"><span class="z">zoom</span></figure>
+        <figure class="shot"><img loading="lazy" src="assets/ua-dashboard.png" alt="Urban Air Meta reporting, September 2026: $3.07M revenue, 3.99x ROAS"><span class="z">zoom</span></figure>
+        <figure class="shot"><img loading="lazy" src="assets/ua-adsets-30d.png" alt="Urban Air ad sets, last 30 days: $628K spent, 39.2M impressions, top ad set 1,388 purchases"><span class="z">zoom</span></figure>
+      </div>
+      <div class="shot-caption">Account context, Jan to Sep 2026 · Sigma reporting (Meta only) · Meta Ads Manager</div>
     </article>
   </div>
 </section>
@@ -700,15 +796,15 @@
 <section id="cpa" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-kicker"><span class="idx">02</span> why cpa, not roas</div>
+      <div class="sec-kicker"><span class="idx">03</span> why cpa, not roas</div>
       <h2>I optimize for cost per acquisition. <em>ROAS is the side effect.</em></h2>
       <p class="sec-sub">ROAS is a ratio. It looks great when you sell to people who were going to buy anyway, and it collapses the moment you try to grow. CPA is a cost. It tells you exactly what a new customer costs today, and whether you can afford more of them tomorrow.</p>
     </div>
     <div class="cpa-grid stagger">
       <div class="cp"><div class="n">01 · roas rewards shrinking</div><h3>The easiest way to raise ROAS is to spend less</h3><p>Cut prospecting, retarget harder, and the ratio goes up while the business stays flat. A CPA target forces the only question that matters: how many customers can I buy this month at a price that still makes money?</p></div>
       <div class="cp"><div class="n">02 · cpa connects to the p&amp;l</div><h3>Margin minus CPA is profit per order</h3><p>That is a number a founder can act on: raise budget, cut it, or fix the offer. A 4x ROAS says nothing about whether the 4 covers product cost, shipping and returns. A $26 CPA against a known margin does.</p></div>
-      <div class="cp"><div class="n">03 · cpa is how meta scales</div><h3>Cost caps and bid caps speak CPA</h3><p>Meta's bidding runs on cost per result, not on ROAS. When the account is built around a CPA target, the algorithm, the budget and the founder are all reading the same number, and spend can grow without the structure breaking. Astra Straps runs on $13 to $15 cost caps. Urban Air holds $48.33 across $5.5M.</p></div>
-      <div class="cp"><div class="n">04 · roas still gets reported</div><h3>I track it. I just don't chase it.</h3><p>Blended ROAS, MER and net profit live in TripleWhale on every account, and they are on this page. But the target I set, test against and scale on is CPA by product and funnel stage. Hit that, and ROAS and profit take care of themselves.</p></div>
+      <div class="cp"><div class="n">03 · cpa is how meta scales</div><h3>Cost caps and bid caps speak CPA</h3><p>Meta's bidding runs on cost per result, not on ROAS. When the account is built around a CPA target, the algorithm, the budget and the founder are all reading the same number, and spend can grow without the structure breaking. Astra Straps runs on NZ$13 to NZ$15 cost caps, with CPA ceilings set by market.</p></div>
+      <div class="cp"><div class="n">04 · roas still gets reported</div><h3>I track it. I just don't chase it.</h3><p>Budgets move on Triple Whale net profit and MER, not pixel ROAS, with CPA ceilings set by market. Blended ROAS still gets reported on every account, and it is on this page. But the target I set, test against and scale on is CPA by product and funnel stage. Hit that, and ROAS and profit take care of themselves.</p></div>
     </div>
     <div class="code reveal">
       <div class="bar"><span class="dots" style="display:flex;gap:6px"><i style="width:9px;height:9px;border-radius:50%;background:#ff5f57"></i><i style="width:9px;height:9px;border-radius:50%;background:#febc2e"></i><i style="width:9px;height:9px;border-radius:50%;background:#28c840"></i></span><span class="f">target_cpa.js</span><span style="margin-left:auto">how I set the target</span></div>
@@ -728,13 +824,13 @@
 <section id="portfolio" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-kicker"><span class="idx">03</span> more from the portfolio</div>
+      <div class="sec-kicker"><span class="idx">04</span> more from the portfolio</div>
       <h2>These seven are not the exception. <em>They are the pattern.</em></h2>
       <p class="sec-sub">E-commerce, SaaS, high-ticket coaching, B2B industrial, and creators, across the USA, Europe, and Australia.</p>
     </div>
     <div class="logs stagger">
       <div class="log">
-        <div class="im"><img loading="lazy" src="assets/smoovee-campaigns-116.jpg" alt="Smoovee Meta ad sets: 116 purchases on one ad set"></div>
+        <div class="im"><img loading="lazy" src="assets/smoovee-campaigns-116.jpg" alt="Smoovee Meta ad sets: 117 purchases on one ad set at $49.70 CPP"></div>
         <div class="bd">
           <div class="hd"><img loading="lazy" src="assets/smoovee_icon.jpg" alt="Smoovee"><div><div class="n">Smoovee</div><div class="t">kitchen · e-commerce · USA</div></div></div>
           <p>Brand-new product launched cold in the US. Lookalikes, UGC creatives, and bid caps on Meta. 42 campaigns tested, winners scaled. The product sold out.</p>
@@ -742,7 +838,7 @@
           <details class="more"><summary><span class="pm">+</span>full story</summary><div class="story">
             <div class="st"><div class="k">challenge</div><p>Launching a brand-new product in the US with no audience and no brand recognition. Find winning audiences and creatives fast, control CPP, and build a full-funnel structure from scratch.</p></div>
             <div class="st"><div class="k">strategy</div><p>Parallel Meta campaigns with Lookalike Audiences, UGC-style creatives, and bid cap strategies to control CPP. 42 campaigns ran through systematic testing: losers killed fast, winners re-tested and scaled. Mother's Day used as a seasonal scaling angle.</p></div>
-            <div class="st"><div class="k">result</div><p>Best Meta ad set: 117 purchases at $49.70 CPP, with the best CPP at $33.76 on a bid cap CBO. Products drove to sold-out status, with live orders tracked in TripleWhale.</p></div>
+            <div class="st"><div class="k">result</div><p>Best Meta ad set: 117 purchases at $49.70 CPP, with the best CPP at $33.76 on a bid cap CBO. Products drove to sold-out status, with live orders tracked in Triple Whale.</p></div>
           </div></details>
         </div>
       </div>
@@ -750,10 +846,10 @@
         <div class="im"><img loading="lazy" src="assets/er_promo.jpeg" alt="Eric Richardson live training" style="object-position: top;"></div>
         <div class="bd">
           <div class="hd"><img loading="lazy" src="assets/er_promo.jpeg" alt="Eric Rich"><div><div class="n">Eric Rich</div><div class="t">high-ticket coaching · USA</div></div></div>
-          <p>$8K program sold to cold US traffic through the "Income Seeker" VSL series: free webinar, retargeting, call booking. Stable funnel at $2,000/day.</p>
+          <p>$8K high-ticket coaching program (real estate and surplus funds) sold to cold US traffic through the "Income Seeker" VSL series: free webinar, retargeting, call booking. Stable funnel at $2,000/day.</p>
           <div class="chips"><span class="chip hl" style="--chip:#fbbf24;">547 calls booked</span><span class="chip">$4.87 best CPL</span><span class="chip">1,003 webinar signups</span></div>
           <details class="more"><summary><span class="pm">+</span>full story</summary><div class="story">
-            <div class="st"><div class="k">challenge</div><p>An $8K high-ticket real estate and surplus funds program in the US market. Selling $8K directly to cold traffic burned budget with no return.</p></div>
+            <div class="st"><div class="k">challenge</div><p>An $8K high-ticket coaching program (real estate and surplus funds) in the US market. Selling $8K directly to cold traffic burned budget with no return.</p></div>
             <div class="st"><div class="k">diagnosis</div><p>Without an educational VSL at the top of the funnel, leads arrived too cold for a call. Cost per booking was unsustainable and close rates were low.</p></div>
             <div class="st"><div class="k">strategy</div><p>Built the "Income Seeker" VSL series (Surplus Funds, Unclaimed Money, Government Glitch) as top-of-funnel entry. Best VSL drove signups at $4.87. Free webinar → retargeting → call booking → $8K offer.</p></div>
             <div class="st"><div class="k">result</div><p>$34K invested in call booking campaigns in April generated 547 booked calls and 1,003 webinar signups: a stable, scalable funnel at $2,000/day.</p></div>
@@ -763,21 +859,21 @@
       <div class="log">
         <div class="im"><img loading="lazy" src="assets/pmb_result.png" alt="Pick My Brain subscriber growth"></div>
         <div class="bd">
-          <div class="hd"><img loading="lazy" src="assets/image-10-1.png" alt="Pick My Brain"><div><div class="n">Pick My Brain</div><div class="t">ai saas · silicon valley</div></div></div>
-          <p>Early-stage SaaS with zero audience. Awareness first, then aggressive retargeting of engaged users. CAC dropped as the funnel warmed up.</p>
-          <div class="chips"><span class="chip hl" style="--chip:#60a5fa;">0 → 500 subscribers</span><span class="chip">2,175 signups · 6 months</span><span class="chip">10.86K MAU</span></div>
+          <div class="hd"><img loading="lazy" src="assets/image-10-1.png" alt="Pick My Brain"><div><div class="n">Pick My Brain</div><div class="t">ai saas · Sep 2025 to Apr 2026</div></div></div>
+          <p>Early-stage SaaS with zero audience, Sep 2025 to Apr 2026, across 4 markets (US, Canada, Europe, Australia). Awareness first, then aggressive retargeting of engaged users. CAC dropped as the funnel warmed up.</p>
+          <div class="chips"><span class="chip hl" style="--chip:#60a5fa;">0 → 500 subscribers</span><span class="chip">2,175 signups</span><span class="chip">10.86K MAU</span></div>
           <details class="more"><summary><span class="pm">+</span>full story</summary><div class="story">
             <div class="st"><div class="k">challenge</div><p>Pick My Brain launched with no user base, entering an extremely competitive AI platform market in the US.</p></div>
             <div class="st"><div class="k">diagnosis</div><p>In early-stage SaaS, converting cold traffic directly to subscriptions rarely works. Awareness and authority had to come first.</p></div>
             <div class="st"><div class="k">strategy</div><p>Two-step funnel: awareness campaigns with valuable content, followed by aggressive retargeting of engaged users. CAC dropped as the funnel warmed up.</p></div>
-            <div class="st"><div class="k">result</div><p>From zero to 500 paid subscriptions with consistent month-over-month growth across 3 international markets, with the USA as the primary market.</p></div>
+            <div class="st"><div class="k">result</div><p>From zero to 500 paid subscriptions with consistent month-over-month growth across 4 markets (US, Canada, Europe, Australia), Sep 2025 to Apr 2026.</p></div>
           </div></details>
         </div>
       </div>
       <div class="log">
         <div class="im"><img loading="lazy" src="assets/tr_import_1006_image-5-1.jpeg" alt="Traffic Raptors campaign results"></div>
         <div class="bd">
-          <div class="hd"><img loading="lazy" src="assets/traffic_raptors_logo.jpeg" alt="Traffic Raptors"><div><div class="n">Traffic Raptors</div><div class="t">nutraceuticals · US/CA/EU/AU</div></div></div>
+          <div class="hd"><img loading="lazy" src="assets/traffic_raptors_logo.jpeg" alt="Traffic Raptors"><div><div class="n">Traffic Raptors</div><div class="t">nutraceuticals · US/CA/EU/AU · Amsterdam (Remote)</div></div></div>
           <p>Four countries running simultaneously, each with its own structure, creatives, and copy adapted to the local market.</p>
           <div class="chips"><span class="chip hl" style="--chip:#fb923c;">3.4x to 5.3x ROAS</span><span class="chip">4 markets at once</span></div>
           <details class="more"><summary><span class="pm">+</span>full story</summary><div class="story">
@@ -797,17 +893,17 @@
   <div class="wrap">
     <div class="sv-grid">
       <div class="sec-head reveal">
-        <div class="sec-kicker"><span class="idx">04</span> working with me</div>
+        <div class="sec-kicker"><span class="idx">05</span> working with me</div>
         <h2>What <em>you get.</em></h2>
         <p class="sec-sub">Whether you need to scale, audit your campaigns, or rebuild your account from scratch, the work follows the same system that produced every number on this page.</p>
         <div style="margin-top: 28px;"><a class="btn primary js-contact" href="#contact">Start a conversation <span class="arr">→</span></a></div>
       </div>
       <ul class="sv stagger">
-        <li><span class="ix">01</span><div><strong>Full account audit & restructure</strong><span>Funnel architecture, naming systems, budget consolidation. I've fixed accounts with 300+ fragmented campaigns.</span></div></li>
-        <li><span class="ix">02</span><div><strong>Meta Ads management</strong><span>Prospecting, retargeting, and scaling with structures that keep CPA stable as budget grows.</span></div></li>
-        <li><span class="ix">03</span><div><strong>Creative strategy & UGC systems</strong><span>Test-to-scale creative system, weekly iteration briefs built from winners, competitor swipe files, angles and personas, and creator testing. I tell you what to produce based on what the data says converts.</span></div></li>
-        <li><span class="ix">04</span><div><strong>Scaling systems on Meta</strong><span>Cost caps, bid caps, CBO/ABO and Advantage+ structures built around a CPA target, so spend can grow without the cost per customer running away. From cost-cap stores to $5.5M+ a year at Urban Air.</span></div></li>
-        <li><span class="ix">05</span><div><strong>Profit-first reporting</strong><span>TripleWhale / MotionApp tracking. You see CPA by product and funnel stage, net profit and blended numbers, not vanity pixel ROAS.</span></div></li>
+        <li><span class="ix">01</span><div><strong>Creative strategy & UGC systems</strong><span>Test-to-scale creative system, weekly briefs built from winners, templates and samples for the creative team, competitor swipe files, angles and personas, and creator testing. I tell you what to produce based on what the data says converts.</span></div></li>
+        <li><span class="ix">02</span><div><strong>Full account audit & restructure</strong><span>Funnel architecture, naming systems, budget consolidation. I've fixed accounts with 300+ fragmented campaigns.</span></div></li>
+        <li><span class="ix">03</span><div><strong>Meta Ads management</strong><span>Prospecting, retargeting, and scaling with structures that keep CPA stable as budget grows.</span></div></li>
+        <li><span class="ix">04</span><div><strong>Scaling systems on Meta</strong><span>Cost caps, bid caps, CBO/ABO and Advantage+ structures built around a CPA target, so spend can grow without the cost per customer running away. From cost-cap stores with a $30 ticket to multi-store groups across 4 markets.</span></div></li>
+        <li><span class="ix">05</span><div><strong>Profit-first reporting</strong><span>Triple Whale / MotionApp tracking. You see CPA by product and funnel stage, net profit and blended numbers, not vanity pixel ROAS.</span></div></li>
       </ul>
     </div>
   </div>
@@ -819,12 +915,12 @@
     <div class="about reveal">
       <div class="ph"><img loading="lazy" src="assets/arthur.jpg" alt="Arthur Rückert"><span class="tag">arthur.jpg</span></div>
       <div>
-        <div class="sec-kicker"><span class="idx">05</span> about</div>
+        <div class="sec-kicker"><span class="idx">06</span> about</div>
         <h2>Arthur <em>Rückert</em></h2>
         <p><strong>I like to understand the business before touching any campaign.</strong> From there, I build creatives that educate before converting, structure funnels that hold CPA even as budget scales, and make decisions based on real data.</p>
         <p>I've worked with e-commerce, SaaS, B2B industrial, content creators, and premium brands across the USA, Europe, and Australia. My specialty is Meta and paid social: that is where I focus, and where every result on this page comes from.</p>
-        <div class="tags"><span class="chip">4+ years</span><span class="chip">60+ brands</span><span class="chip">USA · Europe · Australia</span><span class="chip">Meta & paid social</span><span class="chip">Creative strategy</span><span class="chip">TripleWhale · MotionApp · Sigma</span><span class="chip">English C1</span></div>
-        <p style="margin-top:14px">Currently media buyer at Goodway Group (Urban Air Adventure Park) and SDW Group (Astra Straps, Astra Cases, Magic Bra, Clara Nutrition). <a href="assets/Arthur-Ruckert-CV.pdf" target="_blank" rel="noopener">Download my CV (PDF) →</a></p>
+        <div class="tags"><span class="chip">4+ years</span><span class="chip">60+ brands</span><span class="chip">US · UK · AU · NZ</span><span class="chip">Meta & paid social</span><span class="chip">Creative strategy</span><span class="chip">Triple Whale · Motion · Trendtrack · Foreplay</span><span class="chip">English C1</span></div>
+        <p style="margin-top:14px">Currently Media Buyer + Creative Direction at SDW Group, a hybrid role across Astra Straps, Astra Cases, Magic Bra and Clara Nutrition. <a href="assets/Arthur-Ruckert-CV.pdf" target="_blank" rel="noopener">Download my CV (PDF) →</a></p>
       </div>
     </div>
   </div>
@@ -894,7 +990,7 @@
 
   // nav + progress + active link
   const nav = $('#nav'), bar = $('#progress');
-  const secs = ['cases','cpa','portfolio','services','about'].map(id => document.getElementById(id));
+  const secs = ['creatives','cases','cpa','portfolio','services','about'].map(id => document.getElementById(id));
   const links = $$('#navlinks a');
   const onScroll = () => {
     nav.classList.toggle('scrolled', scrollY > 24);
@@ -918,7 +1014,7 @@
   const tk = $('#ticker'); tk.innerHTML += tk.innerHTML;
 
   // typed terminal
-  const lines = ['meta ads --account urban-air --objective purchases --target-cpa 48', 'structure: 770 ad sets · 86% lower funnel · park-level reporting', 'status: cpa $48.33 · 114,381 purchases · $25.2M revenue'];
+  const lines = ['meta ads --brand magic-bra --market us --launch ct-push', 'structure: 80 ad sets · 201 ads · split by angle · 5 hooks per ad set', 'brief: ECHO-VIDEOAD004-H2 · 33 sales at NZ$34.94 cpa → 3 new hooks + AU cut'];
   const tt = $('#term-text');
   if (reduce) tt.textContent = lines[2];
   else { let li = 0, ci = 0; const type = () => { const l = lines[li]; tt.textContent = l.slice(0, ci++); if (ci <= l.length) setTimeout(type, 28); else setTimeout(() => { li = (li + 1) % lines.length; ci = 0; type(); }, 2600); }; setTimeout(type, 900); }
@@ -958,6 +1054,57 @@
   $$('.js-contact').forEach(a => a.addEventListener('click', e => { e.preventDefault(); openCm(); }));
   $('.cm-bar .x').addEventListener('click', closeCm);
   cm.addEventListener('click', e => { if (e.target === cm) closeCm(); });
+
+  // creatives (cards generated by scripts/build_creatives.py into assets/creatives/creatives.json)
+  window.__openLb = openLb;
+  (async () => {
+    let data; try { const r = await fetch('assets/creatives/creatives.json', { cache: 'no-cache' }); if (!r.ok) return; data = await r.json(); } catch (e) { return; }
+    const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const money = (cur, v) => v == null || v === '' ? '' : (cur || '') + v;
+    const S = data.summary;
+    if (S && S.orders) {
+      const t = $('#cr-totals');
+      t.innerHTML = `<div class="cell"><div class="l">Orders from creatives I briefed</div><div class="v">${esc(S.orders)}</div></div>` +
+        `<div class="cell"><div class="l">Revenue</div><div class="v">${esc(money(S.currency, S.revenue))}</div></div>` +
+        `<div class="cell"><div class="l">Period</div><div class="v" style="font-size:clamp(18px,1.8vw,24px)">${esc(S.period)}</div></div>` +
+        (S.image ? `<div class="cell proof"><div class="l">Source: Triple Whale, ${esc(S.period)}</div><button class="btn ghost" type="button" id="cr-total-proof">See proof</button></div>` : '');
+      t.hidden = false;
+      const b = $('#cr-total-proof'); if (b) b.addEventListener('click', () => openLb([{ src: S.image, alt: 'Source: Triple Whale, ' + S.period }], 0));
+    }
+    const cards = data.cards || []; if (!cards.length) return;
+    const grid = $('#cr-grid'), brief = $('.cr-brief', grid);
+    cards.forEach(c => {
+      const el = document.createElement('article'); el.className = 'cr-card'; el.dataset.brand = c.brand; el.dataset.format = c.format;
+      const m = c.media || {};
+      const media = m.type === 'video'
+        ? `<video muted loop playsinline preload="none" ${m.poster ? `poster="${esc(m.poster)}"` : ''} data-src="${esc(m.src)}" aria-label="${esc(c.alt)}"></video>`
+        : m.src ? `<img loading="lazy" src="${esc(m.src)}" alt="${esc(c.alt)}">` : '';
+      const btn = (k, label, cls = '') => c[k] ? (/\.(pdf|md)$/i.test(c[k]) ? `<a class="${cls}" href="${esc(c[k])}" target="_blank" rel="noopener">${label}</a>` : `<button type="button" class="${cls}" data-lb="${esc(c[k])}" data-cap="${esc(c.brand + ' · ' + label)}">${label}</button>`) : '';
+      el.innerHTML = `<div class="cr-media">${media}<span class="fmt">${esc(c.format)}</span></div>
+        <div class="cr-body">
+          <div class="who">${esc(c.brand)} · ${esc(c.market)} · ${esc(c.format)}</div>
+          ${c.hook ? `<div class="hook">“${esc(c.hook)}”</div>` : ''}
+          <dl>${c.angle ? `<dt>angle</dt><dd>${esc(c.angle)}</dd>` : ''}${c.persona ? `<dt>persona</dt><dd>${esc(c.persona)}</dd>` : ''}${c.period ? `<dt>period</dt><dd>${esc(c.period)}</dd>` : ''}</dl>
+          ${(c.my_role || []).length ? `<div class="chips">${c.my_role.map(r => `<span class="chip">${esc(r)}</span>`).join('')}</div>` : ''}
+          <div class="cr-stats"><div><div class="l">orders</div><div class="v">${esc(c.orders)}</div></div><div><div class="l">revenue</div><div class="v">${esc(money(c.currency, c.revenue))}</div></div><div><div class="l">cpa</div><div class="v">${esc(money(c.currency, c.cpa))}</div></div><div><div class="l">roas</div><div class="v">${esc(c.roas)}</div></div></div>
+          <div class="cr-actions">${btn('brief', 'Brief')}${btn('template', 'Template')}${btn('sample', 'Sample')}${btn('tw', 'Triple Whale proof', 'tw')}</div>
+          ${c.learning ? `<div class="cr-learn"><b>Learning:</b> ${esc(c.learning)}${c.next_iteration ? ` <b>→ next iteration:</b> ${esc(c.next_iteration)}` : ''}</div>` : ''}
+        </div>`;
+      grid.insertBefore(el, brief);
+    });
+    grid.addEventListener('click', e => { const b = e.target.closest('[data-lb]'); if (b) openLb([{ src: b.dataset.lb, alt: b.dataset.cap }], 0); });
+    const vio = new IntersectionObserver(es => es.forEach(e => { const v = e.target; if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; if (!reduce) v.play().catch(() => {}); } else v.pause(); }), { threshold: 0.4 });
+    $$('video[data-src]', grid).forEach(v => vio.observe(v));
+    $$('.cr-card', grid).forEach(el => el.classList.add('in'));
+    const brands = [...new Set(cards.map(c => c.brand))], formats = [...new Set(cards.map(c => c.format))];
+    if (brands.length > 1 || formats.length > 1) {
+      const f = $('#cr-filters'), st = { brand: '*', format: '*' };
+      const group = (key, vals) => `<span class="lbl">${key}</span><button class="on" data-k="${key}" data-v="*">all</button>` + vals.map(v => `<button data-k="${key}" data-v="${esc(v)}">${esc(v)}</button>`).join('');
+      f.innerHTML = group('brand', brands) + '<span class="sep"></span>' + group('format', formats); f.hidden = false;
+      f.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; st[b.dataset.k] = b.dataset.v; $$(`button[data-k="${b.dataset.k}"]`, f).forEach(x => x.classList.toggle('on', x === b));
+        $$('.cr-card', grid).forEach(el => { const ok = (st.brand === '*' || el.dataset.brand === st.brand || el.dataset.brand === '*') && (st.format === '*' || el.dataset.format === st.format || el.dataset.format === '*'); el.hidden = !ok; }); });
+    }
+  })();
   addEventListener('keydown', e => { if (e.key === 'Escape') { closeLb(); closeCm(); closeMenu(); } if (lb.classList.contains('open')) { if (e.key === 'ArrowRight') show(idx + 1); if (e.key === 'ArrowLeft') show(idx - 1); } });
 })();
 </script>
