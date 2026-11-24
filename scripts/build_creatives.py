@@ -77,6 +77,8 @@ def period_label(p):
         return p
     mon = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
     y1, m1, d1, y2, m2, d2 = map(int, m.groups())
+    if y1 != y2:
+        return f'{mon[m1-1]} {d1}, {y1} to {mon[m2-1]} {d2}, {y2}'
     return f'{mon[m1-1]} {d1} to {mon[m2-1]} {d2}, {y2}'
 
 
@@ -146,6 +148,20 @@ def main():
                 'learning': g('learning'), 'next_iteration': g('next_iteration'),
                 'my_role': roles, 'media': media, 'tw': tw,
             }
+            # lifetime (since launch), only when the export has it
+            if filled(r.get('lt_orders', '')) and filled(r.get('lt_spend', '')):
+                ltw = None
+                if (d / 'tw-lifetime.png').exists():
+                    web_image(d / 'tw-lifetime.png', out / 'tw-lifetime.webp', max_w=1400)
+                    ltw = f'assets/creatives/{slug}/tw-lifetime.webp'
+                launch = r.get('launch_date', '')
+                card['lifetime'] = {
+                    'label': 'Since launch' if filled(launch) else 'All Triple Whale history',
+                    'period': period_label(r['lt_period']),
+                    'launch_date': period_label(f'{launch} a {launch}').split(' to ')[1] if filled(launch) else None,
+                    'spend': money(r['lt_spend']), 'orders': r['lt_orders'], 'revenue': money(r['lt_revenue']),
+                    'cpa': money(r['lt_cpa']), 'roas': r['lt_roas'], 'ctr': r['lt_ctr'], 'tw': ltw,
+                }
             fmt = {'UGC': 'UGC video', 'video': 'video', 'static': 'static', 'carousel': 'carousel'}.get(card['format'], card['format'])
             card['alt'] = f"{card['brand']} {card['market']} {fmt} ad: {card['orders']} purchases at {cur}{card['cpa']} CPA, {card['roas']} ROAS"
             cards.append(card)
@@ -157,7 +173,27 @@ def main():
     }
     for b in brands:
         b['context'] = context.get(b['brand'])
-    (OUT / 'creatives.json').write_text(json.dumps({'brands': brands}, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    # Trestique all-time top 30 (grouped by ad name), from the export's resumo.csv
+    tl = None
+    tl_csv = OUT / '_trestique-lifetime' / 'source.csv'
+    if tl_csv.exists():
+        rows30 = list(csv.DictReader(open(tl_csv, encoding='utf-8')))
+        items = [{
+            'rank': int(x['rank']), 'name': x['ad_name'], 'spend': float(x['spend_usd']), 'orders': int(x['pixel_purchases']),
+            'revenue': float(x['pixel_cv_usd']), 'cpa': float(x['pixel_cpa_usd']), 'roas': x['pixel_roas'], 'ctr': x['ctr'],
+            'tw': f"assets/creatives/_trestique-lifetime/{x['print'].rsplit('.', 1)[0]}.webp",
+        } for x in rows30]
+        tot_spend = round(sum(i['spend'] for i in items), 2)
+        tot_rev = round(sum(i['revenue'] for i in items), 2)
+        tl = {
+            'period': 'Nov 24, 2022 to Nov 23, 2026', 'currency': 'US$',
+            'note': 'Grouped by ad name across all campaigns (Triple Whale, TA + Platform Views, pixel). A name can cover several ads, so these totals can be higher than the single-ad numbers on the cards above. The same video can also appear under two names; rows are not merged.',
+            'items': items,
+            'totals': {'spend': tot_spend, 'orders': sum(i['orders'] for i in items), 'revenue': tot_rev,
+                       'roas': f'{tot_rev / tot_spend:.2f}'},
+        }
+        print(f"  trestique top {len(items)}: spend {tot_spend:,.2f}, purchases {tl['totals']['orders']}, revenue {tot_rev:,.2f}, roas {tl['totals']['roas']}")
+    (OUT / 'creatives.json').write_text(json.dumps({'brands': brands, 'trestique_lifetime': tl}, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     # drop old card folders that are no longer selected
     for p in OUT.iterdir():
         if p.is_dir() and not p.name.startswith('_') and p.name not in keep:

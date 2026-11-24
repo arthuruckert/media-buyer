@@ -414,6 +414,24 @@
     .cr-rules li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 2px; background: var(--cyan); }
     .cr-rules b { color: var(--text); font-weight: 600; }
     @media (max-width: 960px) { .cr-how { grid-template-columns: 1fr; } }
+    .cr-per { font-family: var(--mono); font-size: 10.5px; color: var(--dim); text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: -4px; }
+    .cr-per.lt { color: var(--violet); margin-top: 2px; }
+    .cr-stats.lt > div { border-color: rgba(139,123,255,0.28); }
+    .cr-stats.lt .v { color: var(--violet); }
+    .cr-brand .ltsum { flex-basis: 100%; font-size: 13px; color: var(--muted); }
+    .cr-brand .ltsum span { font-family: var(--mono); font-size: 11px; color: var(--violet); text-transform: uppercase; margin-right: 6px; }
+    .cr-brand .ltsum b { color: var(--violet); font-family: var(--head); }
+    .tq-life { margin-top: 56px; border: 1px solid var(--line); border-radius: 18px; background: rgba(10,12,17,0.7); padding: clamp(18px, 3vw, 32px); }
+    .tl-head h3 { font-family: var(--head); font-size: clamp(20px, 2.2vw, 28px); letter-spacing: -0.02em; margin: 4px 0 8px; }
+    .tl-head p { font-size: 13.5px; color: var(--muted); max-width: 760px; }
+    .tl-tot { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 18px 0; font-size: 13px; color: var(--muted); }
+    .tl-tot b { font-family: var(--head); font-size: 20px; color: var(--cyan); margin-right: 4px; }
+    .tl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table.tl { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 760px; }
+    table.tl th { text-align: left; font-family: var(--mono); font-size: 10.5px; color: var(--dim); text-transform: uppercase; font-weight: 400; padding: 8px 10px; border-bottom: 1px solid var(--line-2); }
+    table.tl td { padding: 8px 10px; border-bottom: 1px solid var(--line); color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    table.tl td.nm { color: var(--text); white-space: normal; }
+    table.tl .tw { font-family: var(--mono); font-size: 11px; padding: 4px 8px; border-radius: 6px; background: none; border: 1px solid var(--line-2); color: var(--muted); cursor: pointer; }
 
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 960px) {
@@ -638,6 +656,7 @@
 
     <div class="cr-filters" id="cr-filters" hidden></div>
     <div class="cr-grid" id="cr-grid"></div>
+    <div class="tq-life" id="tq-life" hidden></div>
   </div>
 </section>
 
@@ -1137,6 +1156,12 @@
       `<div class="cell"><div class="l">Brands</div><div class="v" style="font-size:clamp(18px,1.9vw,26px)">${brands.map(b => esc(b.brand)).join(' · ')}</div></div>` +
       `<div class="cell proof"><div class="l">Source</div><div class="s">Triple Whale, Meta, TA + Platform Views, pixel purchases. Last 90 days unless the card says otherwise. Currencies shown as reported, not converted.</div></div>`;
     t.hidden = false;
+    const ltLine = g => {
+      const lt = g.filter(c => c.lifetime); if (!lt.length) return '';
+      const sum = {}; lt.forEach(c => { const k = c.currency; sum[k] = sum[k] || { o: 0, r: 0, s: 0 }; sum[k].o += N(c.lifetime.orders); sum[k].r += N(c.lifetime.revenue); sum[k].s += N(c.lifetime.spend); });
+      const parts = Object.entries(sum).map(([k, v]) => `<b>${fmt0(v.o)}</b> purchases, <b>${esc(k)}${fmt0(v.r)}</b> revenue on ${esc(k)}${fmt0(v.s)} spend`);
+      return `<p class="ltsum"><span>${esc(lt[0].lifetime.label)}, same ${lt.length} creatives:</span> ${parts.join(' · ')}</p>`;
+    };
     brands.forEach(b => {
       const g = b.cards, markets = [...new Set(g.map(c => c.market))];
       const top = g.reduce((a, x) => N(x.orders) > N(a.orders) ? x : a), best = g.reduce((a, x) => N(x.roas) > N(a.roas) ? x : a);
@@ -1146,6 +1171,7 @@
         <div class="st"><div><b>${fmt0(g.reduce((s, c) => s + N(c.orders), 0))}</b> purchases</div><div><b>${Object.entries(rev).map(([k, v]) => esc(k) + fmt0(v)).join(' + ')}</b> revenue</div>
         <div><b>${esc(top.orders)}</b> purchases from the top creative (${esc(top.market)}, ${esc(fmtName[top.format] || top.format)})</div>
         <div><b>${esc(best.roas)}</b> best ROAS (${esc(best.market)}, ${esc(best.orders)} purchases)</div></div>
+        ${ltLine(g)}
         ${b.context ? `<p class="ctx">${esc(b.context)}</p>` : ''}`;
       grid.insertBefore(h, brief);
       g.forEach(c => {
@@ -1160,6 +1186,7 @@
             <div class="who">${esc(c.brand)} · ${esc(c.market)} · ${esc(c.period)}</div>
             ${c.hook ? `<div class="hook">“${esc(c.hook)}”</div>` : ''}
             <dl>${c.angle ? `<dt>angle</dt><dd>${esc(c.angle)}</dd>` : ''}${c.persona ? `<dt>persona</dt><dd>${esc(c.persona)}</dd>` : ''}</dl>
+            <div class="cr-per">Last 90 days · ${esc(c.period)}</div>
             <div class="cr-stats">
               <div><div class="l">purchases</div><div class="v">${esc(c.orders)}</div></div>
               <div><div class="l">revenue</div><div class="v">${C}${esc(c.revenue)}</div></div>
@@ -1168,14 +1195,38 @@
               <div><div class="l">CTR</div><div class="v">${esc(c.ctr)}</div></div>
               <div><div class="l">spend</div><div class="v">${C}${esc(c.spend)}</div></div>
             </div>
+            ${c.lifetime ? `<div class="cr-per lt">${c.lifetime.launch_date ? 'Since launch · ' + esc(c.lifetime.launch_date) + ' to ' + esc(c.lifetime.period.split(' to ')[1] || '') : esc(c.lifetime.label) + ' · ' + esc(c.lifetime.period)}</div>
+            <div class="cr-stats lt">
+              <div><div class="l">purchases</div><div class="v">${esc(c.lifetime.orders)}</div></div>
+              <div><div class="l">revenue</div><div class="v">${C}${esc(c.lifetime.revenue)}</div></div>
+              <div><div class="l">spend</div><div class="v">${C}${esc(c.lifetime.spend)}</div></div>
+              <div><div class="l">CPA</div><div class="v">${C}${esc(c.lifetime.cpa)}</div></div>
+              <div><div class="l">ROAS</div><div class="v">${esc(c.lifetime.roas)}</div></div>
+              <div><div class="l">CTR</div><div class="v">${esc(c.lifetime.ctr)}</div></div>
+            </div>` : ''}
             ${c.my_role && c.my_role.length ? `<div class="chips"><span class="chip">my role</span>${c.my_role.map(r => `<span class="chip hl">${esc(r)}</span>`).join('')}</div>` : ''}
-            ${c.tw ? `<div class="cr-actions"><button type="button" class="tw" data-lb="${esc(c.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · ' + c.period)}">Triple Whale view</button></div>` : ''}
+            <div class="cr-actions">${c.tw ? `<button type="button" class="tw" data-lb="${esc(c.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · last 90 days · ' + c.period)}">Triple Whale · 90 days</button>` : ''}${c.lifetime && c.lifetime.tw ? `<button type="button" class="tw" data-lb="${esc(c.lifetime.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · ' + c.lifetime.label + ' · ' + c.lifetime.period)}">Triple Whale · ${esc(c.lifetime.label.toLowerCase())}</button>` : ''}</div>
             ${c.learning ? `<div class="cr-learn"><b>Learning:</b> ${esc(c.learning)}${c.next_iteration ? ` <b>Next iteration:</b> ${esc(c.next_iteration)}` : ''}</div>` : ''}
           </div>`;
         grid.insertBefore(el, brief);
       });
     });
     grid.addEventListener('click', e => { const b = e.target.closest('[data-lb]'); if (b) openLb([{ src: b.dataset.lb, alt: b.dataset.cap }], 0); });
+    const TL = data.trestique_lifetime, tlBox = $('#tq-life');
+    if (TL && TL.items && TL.items.length) {
+      const m2 = n => n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      const T = TL.totals, cur = esc(TL.currency);
+      tlBox.innerHTML = `<div class="tl-head"><div class="sec-kicker">trestique · all-time</div>
+          <h3>Top ${TL.items.length} creatives that ran in the Trestique account I managed</h3>
+          <p>${esc(TL.period)}. ${esc(TL.note)}</p></div>
+        <div class="tl-tot"><div><b>${cur}${m2(T.spend)}</b> spend</div><div><b>${fmt0(T.orders)}</b> purchases</div><div><b>${cur}${m2(T.revenue)}</b> revenue</div><div><b>${esc(T.roas)}</b> ROAS</div></div>
+        <div class="tl-wrap"><table class="tl"><thead><tr><th>#</th><th>creative</th><th>purchases</th><th>spend</th><th>revenue</th><th>CPA</th><th>ROAS</th><th>CTR</th><th></th></tr></thead><tbody>
+        ${TL.items.map(i => `<tr><td>${String(i.rank).padStart(2, '0')}</td><td class="nm">${esc(i.name)}</td><td>${fmt0(i.orders)}</td><td>${cur}${m2(i.spend)}</td><td>${cur}${m2(i.revenue)}</td><td>${cur}${m2(i.cpa)}</td><td>${esc(i.roas)}</td><td>${esc(i.ctr)}</td>
+          <td><button type="button" class="tw" data-lb="${esc(i.tw)}" data-cap="${esc('Trestique · ' + i.name + ' · ' + TL.period)}">print</button></td></tr>`).join('')}
+        </tbody></table></div>`;
+      tlBox.hidden = false;
+      tlBox.addEventListener('click', e => { const b = e.target.closest('[data-lb]'); if (b) openLb([{ src: b.dataset.lb, alt: b.dataset.cap }], 0); });
+    }
     const vio = new IntersectionObserver(es => es.forEach(e => { const v = e.target; if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; if (!reduce) v.play().catch(() => {}); } else v.pause(); }), { threshold: 0.35 });
     $$('video[data-src]', grid).forEach(v => vio.observe(v));
     grid.classList.remove('stagger'); grid.classList.add('in');

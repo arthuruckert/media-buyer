@@ -34,6 +34,18 @@
             "poster": "assets/creatives/astrastraps-au-echo-videoad004-us-h2/poster.jpg"
           },
           "tw": "assets/creatives/astrastraps-au-echo-videoad004-us-h2/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Aug 20 to Nov 23, 2026",
+            "launch_date": "Aug 21, 2026",
+            "spend": "4,645.40",
+            "orders": "133",
+            "revenue": "8,738.87",
+            "cpa": "34.93",
+            "roas": "1.88",
+            "ctr": "1.49%",
+            "tw": "assets/creatives/astrastraps-au-echo-videoad004-us-h2/tw-lifetime.webp"
+          },
           "alt": "Astra Straps AU video ad: 132 purchases at A$34.15 CPA, 1.92 ROAS"
         },
         {
@@ -67,6 +79,18 @@
             "poster": "assets/creatives/astrastraps-us-echo-videoad001-au-h5/poster.jpg"
           },
           "tw": "assets/creatives/astrastraps-us-echo-videoad001-au-h5/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Oct 7 to Nov 23, 2026",
+            "launch_date": "Oct 8, 2026",
+            "spend": "1,551.00",
+            "orders": "61",
+            "revenue": "2,527.47",
+            "cpa": "25.43",
+            "roas": "1.63",
+            "ctr": "1.18%",
+            "tw": "assets/creatives/astrastraps-us-echo-videoad001-au-h5/tw-lifetime.webp"
+          },
           "alt": "Astra Straps US video ad: 61 purchases at US$25.43 CPA, 1.63 ROAS"
         },
         {
@@ -98,6 +122,18 @@
             "src": "assets/creatives/astrastraps-us-aereslim-imagead001-batch1-v2-1/ad.webp"
           },
           "tw": "assets/creatives/astrastraps-us-aereslim-imagead001-batch1-v2-1/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "May 22 to Nov 23, 2026",
+            "launch_date": "May 23, 2026",
+            "spend": "3,696.48",
+            "orders": "174",
+            "revenue": "7,364.88",
+            "cpa": "21.24",
+            "roas": "1.99",
+            "ctr": "2.09%",
+            "tw": "assets/creatives/astrastraps-us-aereslim-imagead001-batch1-v2-1/tw-lifetime.webp"
+          },
           "alt": "Astra Straps US static ad: 51 purchases at US$20.36 CPA, 2.19 ROAS"
         },
         {
@@ -130,6 +166,18 @@
             "poster": "assets/creatives/astrastraps-au-leam-ad003-916-h2/poster.jpg"
           },
           "tw": "assets/creatives/astrastraps-au-leam-ad003-916-h2/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Oct 13 to Nov 23, 2026",
+            "launch_date": "Oct 14, 2026",
+            "spend": "909.07",
+            "orders": "40",
+            "revenue": "2,333.27",
+            "cpa": "22.73",
+            "roas": "2.57",
+            "ctr": "1.19%",
+            "tw": "assets/creatives/astrastraps-au-leam-ad003-916-h2/tw-lifetime.webp"
+          },
           "alt": "Astra Straps AU video ad: 40 purchases at A$22.72 CPA, 2.57 ROAS"
         },
         {
@@ -161,6 +209,18 @@
             "src": "assets/creatives/astrastraps-au-aereslim-imagead002-h1-v2/ad.webp"
           },
           "tw": "assets/creatives/astrastraps-au-aereslim-imagead002-h1-v2/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Oct 13 to Nov 23, 2026",
+            "launch_date": "Oct 14, 2026",
+            "spend": "1,278.35",
+            "orders": "38",
+            "revenue": "2,357.47",
+            "cpa": "33.64",
+            "roas": "1.84",
+            "ctr": "0.56%",
+            "tw": "assets/creatives/astrastraps-au-aereslim-imagead002-h1-v2/tw-lifetime.webp"
+          },
           "alt": "Astra Straps AU static ad: 38 purchases at A$33.64 CPA, 1.84 ROAS"
         },
         {
@@ -194,6 +254,18 @@
             "poster": "assets/creatives/astrastraps-us-aevumnylon-imagead-006-h5/poster.jpg"
           },
           "tw": "assets/creatives/astrastraps-us-aevumnylon-imagead-006-h5/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Oct 13 to Nov 23, 2026",
+            "launch_date": "Oct 14, 2026",
+            "spend": "860.95",
+            "orders": "35",
+            "revenue": "1,715.12",
+            "cpa": "24.60",
+            "roas": "1.99",
+            "ctr": "0.83%",
+            "tw": "assets/creatives/astrastraps-us-aevumnylon-imagead-006-h5/tw-lifetime.webp"
+          },
           "alt": "Astra Straps US video ad: 35 purchases at US$24.60 CPA, 1.99 ROAS"
         },
         {
@@ -224,6 +296,18 @@
             "poster": "assets/creatives/astrastraps-au-2-ad-reviews/poster.jpg"
           },
           "tw": "assets/creatives/astrastraps-au-2-ad-reviews/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Jul 15 to Nov 23, 2026",
+            "launch_date": "Jul 16, 2026",
+            "spend": "1,125.62",
+            "orders": "33",
+            "revenue": "2,324.84",
+            "cpa": "34.11",
+            "roas": "2.07",
+            "ctr": "4.08%",
+            "tw": "assets/creatives/astrastraps-au-2-ad-reviews/tw-lifetime.webp"
+          },
           "alt": "Astra Straps AU video ad: 33 purchases at A$33.69 CPA, 2.09 ROAS"
         },
         {
@@ -255,6 +339,18 @@
             "src": "assets/creatives/astrastraps-us-class-stainless-imagead006-h4/ad.webp"
           },
           "tw": "assets/creatives/astrastraps-us-class-stainless-imagead006-h4/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Oct 13 to Nov 23, 2026",
+            "launch_date": "Oct 14, 2026",
+            "spend": "527.97",
+            "orders": "32",
+            "revenue": "1,212.57",
+            "cpa": "16.50",
+            "roas": "2.30",
+            "ctr": "1.45%",
+            "tw": "assets/creatives/astrastraps-us-class-stainless-imagead006-h4/tw-lifetime.webp"
+          },
           "alt": "Astra Straps US static ad: 32 purchases at US$16.50 CPA, 2.30 ROAS"
         },
         {
@@ -286,6 +382,18 @@
             "src": "assets/creatives/astrastraps-us-ad-pack-2-cc13/ad.webp"
           },
           "tw": "assets/creatives/astrastraps-us-ad-pack-2-cc13/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Mar 19 to Nov 23, 2026",
+            "launch_date": "Mar 20, 2026",
+            "spend": "3,317.09",
+            "orders": "163",
+            "revenue": "6,590.41",
+            "cpa": "20.35",
+            "roas": "1.99",
+            "ctr": "3.96%",
+            "tw": "assets/creatives/astrastraps-us-ad-pack-2-cc13/tw-lifetime.webp"
+          },
           "alt": "Astra Straps US static ad: 30 purchases at US$21.49 CPA, 1.86 ROAS"
         },
         {
@@ -319,6 +427,18 @@
             "poster": "assets/creatives/astrastraps-au-echo-videoad001-au-h5/poster.jpg"
           },
           "tw": "assets/creatives/astrastraps-au-echo-videoad001-au-h5/tw.webp",
+          "lifetime": {
+            "label": "Since launch",
+            "period": "Oct 23 to Nov 23, 2026",
+            "launch_date": "Oct 24, 2026",
+            "spend": "539.61",
+            "orders": "28",
+            "revenue": "1,898.58",
+            "cpa": "19.27",
+            "roas": "3.52",
+            "ctr": "0.91%",
+            "tw": "assets/creatives/astrastraps-au-echo-videoad001-au-h5/tw-lifetime.webp"
+          },
           "alt": "Astra Straps AU video ad: 28 purchases at A$19.27 CPA, 3.52 ROAS"
         }
       ],
@@ -355,6 +475,18 @@
             "poster": "assets/creatives/trestique-us-ad-winner-4/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-ad-winner-4/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "14,462.68",
+            "orders": "135",
+            "revenue": "23,105.33",
+            "cpa": "107.13",
+            "roas": "1.60",
+            "ctr": "2.27%",
+            "tw": "assets/creatives/trestique-us-ad-winner-4/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 134 purchases at US$105.84 CPA, 1.62 ROAS"
         },
         {
@@ -385,6 +517,18 @@
             "poster": "assets/creatives/trestique-us-new-ad-1/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-new-ad-1/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "13,085.93",
+            "orders": "113",
+            "revenue": "17,640.12",
+            "cpa": "115.80",
+            "roas": "1.35",
+            "ctr": "1.84%",
+            "tw": "assets/creatives/trestique-us-new-ad-1/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 99 purchases at US$115.87 CPA, 1.34 ROAS"
         },
         {
@@ -415,6 +559,18 @@
             "poster": "assets/creatives/trestique-us-new-ad-5/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-new-ad-5/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "7,759.02",
+            "orders": "84",
+            "revenue": "12,426.79",
+            "cpa": "92.37",
+            "roas": "1.60",
+            "ctr": "1.24%",
+            "tw": "assets/creatives/trestique-us-new-ad-5/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 84 purchases at US$92.37 CPA, 1.60 ROAS"
         },
         {
@@ -444,6 +600,18 @@
             "src": "assets/creatives/trestique-us-faceinacase-static/ad.webp"
           },
           "tw": "assets/creatives/trestique-us-faceinacase-static/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "7,113.41",
+            "orders": "80",
+            "revenue": "11,462.94",
+            "cpa": "88.92",
+            "roas": "1.61",
+            "ctr": "1.43%",
+            "tw": "assets/creatives/trestique-us-faceinacase-static/tw-lifetime.webp"
+          },
           "alt": "Trestique US static ad: 80 purchases at US$88.92 CPA, 1.61 ROAS"
         },
         {
@@ -473,6 +641,18 @@
             "src": "assets/creatives/trestique-us-early-access-img-ad-1/ad.webp"
           },
           "tw": "assets/creatives/trestique-us-early-access-img-ad-1/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "5,266.25",
+            "orders": "52",
+            "revenue": "6,786.05",
+            "cpa": "101.27",
+            "roas": "1.29",
+            "ctr": "1.73%",
+            "tw": "assets/creatives/trestique-us-early-access-img-ad-1/tw-lifetime.webp"
+          },
           "alt": "Trestique US static ad: 52 purchases at US$101.27 CPA, 1.29 ROAS"
         },
         {
@@ -503,6 +683,18 @@
             "poster": "assets/creatives/trestique-us-ad-winner-6/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-ad-winner-6/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "2,295.23",
+            "orders": "24",
+            "revenue": "3,536.11",
+            "cpa": "95.63",
+            "roas": "1.54",
+            "ctr": "1.59%",
+            "tw": "assets/creatives/trestique-us-ad-winner-6/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 25 purchases at US$91.41 CPA, 1.61 ROAS"
         },
         {
@@ -533,6 +725,18 @@
             "poster": "assets/creatives/trestique-us-new-ad-3/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-new-ad-3/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "2,889.45",
+            "orders": "31",
+            "revenue": "4,645.75",
+            "cpa": "93.21",
+            "roas": "1.61",
+            "ctr": "1.99%",
+            "tw": "assets/creatives/trestique-us-new-ad-3/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 24 purchases at US$91.09 CPA, 1.66 ROAS"
         },
         {
@@ -563,6 +767,18 @@
             "poster": "assets/creatives/trestique-us-lae-andres-ugc/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-lae-andres-ugc/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "1,712.57",
+            "orders": "15",
+            "revenue": "1,911.17",
+            "cpa": "114.17",
+            "roas": "1.12",
+            "ctr": "2.27%",
+            "tw": "assets/creatives/trestique-us-lae-andres-ugc/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 15 purchases at US$114.17 CPA, 1.12 ROAS"
         },
         {
@@ -593,6 +809,18 @@
             "poster": "assets/creatives/trestique-us-michele-johnston-ugc-ad-3/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-michele-johnston-ugc-ad-3/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "1,093.59",
+            "orders": "11",
+            "revenue": "1,479.49",
+            "cpa": "99.42",
+            "roas": "1.35",
+            "ctr": "1.42%",
+            "tw": "assets/creatives/trestique-us-michele-johnston-ugc-ad-3/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 11 purchases at US$99.42 CPA, 1.35 ROAS"
         },
         {
@@ -623,10 +851,365 @@
             "poster": "assets/creatives/trestique-us-ellen-ugc/poster.jpg"
           },
           "tw": "assets/creatives/trestique-us-ellen-ugc/tw.webp",
+          "lifetime": {
+            "label": "All Triple Whale history",
+            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "launch_date": null,
+            "spend": "1,454.72",
+            "orders": "19",
+            "revenue": "2,489.31",
+            "cpa": "76.56",
+            "roas": "1.71",
+            "ctr": "1.58%",
+            "tw": "assets/creatives/trestique-us-ellen-ugc/tw-lifetime.webp"
+          },
           "alt": "Trestique US UGC video ad: 10 purchases at US$74.63 CPA, 1.78 ROAS"
         }
       ],
       "context": "Trestique US, last 365 days (Triple Whale Summary): US$1,593,152 total sales, US$880,653 blended spend, 1.89 ROAS, US$606,750 net profit."
     }
-  ]
+  ],
+  "trestique_lifetime": {
+    "period": "Nov 24, 2022 to Nov 23, 2026",
+    "currency": "US$",
+    "note": "Grouped by ad name across all campaigns (Triple Whale, TA + Platform Views, pixel). A name can cover several ads, so these totals can be higher than the single-ad numbers on the cards above. The same video can also appear under two names; rows are not merged.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Ashley Anne Morgan | UGC Ad #1",
+        "spend": 129992.47,
+        "orders": 1076,
+        "revenue": 170885.43,
+        "cpa": 120.81,
+        "roas": "1.31",
+        "ctr": "2.31%",
+        "tw": "assets/creatives/_trestique-lifetime/01-ashley-anne-morgan-ugc-ad-1.webp"
+      },
+      {
+        "rank": 2,
+        "name": "New Ad #8",
+        "spend": 75721.97,
+        "orders": 694,
+        "revenue": 114174.48,
+        "cpa": 109.11,
+        "roas": "1.51",
+        "ctr": "2.38%",
+        "tw": "assets/creatives/_trestique-lifetime/02-new-ad-8.webp"
+      },
+      {
+        "rank": 3,
+        "name": "New Ad #5",
+        "spend": 47302.58,
+        "orders": 523,
+        "revenue": 73790.9,
+        "cpa": 90.44,
+        "roas": "1.56",
+        "ctr": "1.61%",
+        "tw": "assets/creatives/_trestique-lifetime/03-new-ad-5.webp"
+      },
+      {
+        "rank": 4,
+        "name": "11.07 New creative - Megan | video #2",
+        "spend": 48637.67,
+        "orders": 453,
+        "revenue": 65646.53,
+        "cpa": 107.37,
+        "roas": "1.35",
+        "ctr": "2.27%",
+        "tw": "assets/creatives/_trestique-lifetime/04-megan-video-2.webp"
+      },
+      {
+        "rank": 5,
+        "name": "Ashley | UGC Ad #10",
+        "spend": 51697.67,
+        "orders": 445,
+        "revenue": 72684.95,
+        "cpa": 116.17,
+        "roas": "1.41",
+        "ctr": "1.79%",
+        "tw": "assets/creatives/_trestique-lifetime/05-ashley-ugc-ad-10.webp"
+      },
+      {
+        "rank": 6,
+        "name": "Kyleigh | UGC Ad #6",
+        "spend": 37226.08,
+        "orders": 327,
+        "revenue": 51640.18,
+        "cpa": 113.84,
+        "roas": "1.39",
+        "ctr": "2.42%",
+        "tw": "assets/creatives/_trestique-lifetime/06-kyleigh-ugc-ad-6.webp"
+      },
+      {
+        "rank": 7,
+        "name": "New Ad #1",
+        "spend": 30852.5,
+        "orders": 241,
+        "revenue": 38122.61,
+        "cpa": 128.02,
+        "roas": "1.24",
+        "ctr": "1.81%",
+        "tw": "assets/creatives/_trestique-lifetime/07-new-ad-1.webp"
+      },
+      {
+        "rank": 8,
+        "name": "Ad Winner #4",
+        "spend": 18913.6,
+        "orders": 172,
+        "revenue": 27996.87,
+        "cpa": 109.96,
+        "roas": "1.48",
+        "ctr": "2.17%",
+        "tw": "assets/creatives/_trestique-lifetime/08-ad-winner-4.webp"
+      },
+      {
+        "rank": 9,
+        "name": "Stephanie | UGC Ad #5",
+        "spend": 19855.78,
+        "orders": 156,
+        "revenue": 22668.18,
+        "cpa": 127.28,
+        "roas": "1.14",
+        "ctr": "3.03%",
+        "tw": "assets/creatives/_trestique-lifetime/09-stephanie-ugc-ad-5.webp"
+      },
+      {
+        "rank": 10,
+        "name": "11.07 New creative -Olia Majd | video #3",
+        "spend": 15880.4,
+        "orders": 147,
+        "revenue": 21920.2,
+        "cpa": 108.03,
+        "roas": "1.38",
+        "ctr": "1.76%",
+        "tw": "assets/creatives/_trestique-lifetime/10-olia-majd-video-3.webp"
+      },
+      {
+        "rank": 11,
+        "name": "New Ad #4",
+        "spend": 11437.87,
+        "orders": 140,
+        "revenue": 19296.19,
+        "cpa": 81.7,
+        "roas": "1.69",
+        "ctr": "1.50%",
+        "tw": "assets/creatives/_trestique-lifetime/11-new-ad-4.webp"
+      },
+      {
+        "rank": 12,
+        "name": "Winner Ad #1",
+        "spend": 17840.59,
+        "orders": 134,
+        "revenue": 20311.05,
+        "cpa": 133.14,
+        "roas": "1.14",
+        "ctr": "2.28%",
+        "tw": "assets/creatives/_trestique-lifetime/12-winner-ad-1.webp"
+      },
+      {
+        "rank": 13,
+        "name": "Winner Ad #8",
+        "spend": 15761.95,
+        "orders": 122,
+        "revenue": 18836.68,
+        "cpa": 129.2,
+        "roas": "1.20",
+        "ctr": "2.82%",
+        "tw": "assets/creatives/_trestique-lifetime/13-winner-ad-8.webp"
+      },
+      {
+        "rank": 14,
+        "name": "New Ad #6",
+        "spend": 13844.36,
+        "orders": 117,
+        "revenue": 17027.87,
+        "cpa": 118.33,
+        "roas": "1.23",
+        "ctr": "1.47%",
+        "tw": "assets/creatives/_trestique-lifetime/14-new-ad-6.webp"
+      },
+      {
+        "rank": 15,
+        "name": "FaceinaCase Static",
+        "spend": 11682.44,
+        "orders": 104,
+        "revenue": 14716.33,
+        "cpa": 112.33,
+        "roas": "1.26",
+        "ctr": "1.33%",
+        "tw": "assets/creatives/_trestique-lifetime/15-faceinacase-static.webp"
+      },
+      {
+        "rank": 16,
+        "name": "New Ad #3",
+        "spend": 11841.35,
+        "orders": 99,
+        "revenue": 14189.11,
+        "cpa": 119.61,
+        "roas": "1.20",
+        "ctr": "1.77%",
+        "tw": "assets/creatives/_trestique-lifetime/16-new-ad-3.webp"
+      },
+      {
+        "rank": 17,
+        "name": "New Ad #2",
+        "spend": 9966.52,
+        "orders": 95,
+        "revenue": 13409.44,
+        "cpa": 104.91,
+        "roas": "1.35",
+        "ctr": "1.94%",
+        "tw": "assets/creatives/_trestique-lifetime/17-new-ad-2.webp"
+      },
+      {
+        "rank": 18,
+        "name": "Ad Winner #2",
+        "spend": 11278.57,
+        "orders": 91,
+        "revenue": 14232.16,
+        "cpa": 123.94,
+        "roas": "1.26",
+        "ctr": "2.44%",
+        "tw": "assets/creatives/_trestique-lifetime/18-ad-winner-2.webp"
+      },
+      {
+        "rank": 19,
+        "name": "Early Access IMG Ad #1",
+        "spend": 7905.61,
+        "orders": 81,
+        "revenue": 10638.6,
+        "cpa": 97.6,
+        "roas": "1.35",
+        "ctr": "1.67%",
+        "tw": "assets/creatives/_trestique-lifetime/19-early-access-img-ad-1.webp"
+      },
+      {
+        "rank": 20,
+        "name": "New Ad #7",
+        "spend": 9568.08,
+        "orders": 77,
+        "revenue": 11596.93,
+        "cpa": 124.26,
+        "roas": "1.21",
+        "ctr": "1.78%",
+        "tw": "assets/creatives/_trestique-lifetime/20-new-ad-7.webp"
+      },
+      {
+        "rank": 21,
+        "name": "Samantha MIller | UGC Ad #3",
+        "spend": 8583.26,
+        "orders": 73,
+        "revenue": 9882.15,
+        "cpa": 117.58,
+        "roas": "1.15",
+        "ctr": "1.80%",
+        "tw": "assets/creatives/_trestique-lifetime/21-samantha-miller-ugc-ad-3.webp"
+      },
+      {
+        "rank": 22,
+        "name": "Andrea | Airport Video Ad #4",
+        "spend": 6174.39,
+        "orders": 72,
+        "revenue": 8921.71,
+        "cpa": 85.76,
+        "roas": "1.44",
+        "ctr": "1.61%",
+        "tw": "assets/creatives/_trestique-lifetime/22-andrea-airport-video-ad-4.webp"
+      },
+      {
+        "rank": 23,
+        "name": "Megan | Ad #1 POST ID [borrado]",
+        "spend": 5178.68,
+        "orders": 68,
+        "revenue": 11535.06,
+        "cpa": 76.16,
+        "roas": "2.23",
+        "ctr": "2.83%",
+        "tw": "assets/creatives/_trestique-lifetime/23-megan-ad-1-post.webp"
+      },
+      {
+        "rank": 24,
+        "name": "Winner Video Ad #1 - Copy 1",
+        "spend": 7953.77,
+        "orders": 65,
+        "revenue": 10207.91,
+        "cpa": 122.37,
+        "roas": "1.28",
+        "ctr": "2.46%",
+        "tw": "assets/creatives/_trestique-lifetime/24-winner-video-ad-1-copy-1.webp"
+      },
+      {
+        "rank": 25,
+        "name": "Ad Winner #3",
+        "spend": 6082.25,
+        "orders": 58,
+        "revenue": 7613.83,
+        "cpa": 104.87,
+        "roas": "1.25",
+        "ctr": "1.54%",
+        "tw": "assets/creatives/_trestique-lifetime/25-ad-winner-3.webp"
+      },
+      {
+        "rank": 26,
+        "name": "Ashley @shleeanne | UGC Ad #5",
+        "spend": 6658.93,
+        "orders": 54,
+        "revenue": 9161.54,
+        "cpa": 123.31,
+        "roas": "1.38",
+        "ctr": "2.16%",
+        "tw": "assets/creatives/_trestique-lifetime/26-ashley-shleeanne-ugc-ad-5.webp"
+      },
+      {
+        "rank": 27,
+        "name": "Winner Ad #3 - post [borrado]",
+        "spend": 4918.61,
+        "orders": 52,
+        "revenue": 7022.48,
+        "cpa": 94.59,
+        "roas": "1.43",
+        "ctr": "1.69%",
+        "tw": "assets/creatives/_trestique-lifetime/27-winner-ad-3-post.webp"
+      },
+      {
+        "rank": 28,
+        "name": "Valentines Sale | Ad # 2",
+        "spend": 5166.18,
+        "orders": 52,
+        "revenue": 7536.55,
+        "cpa": 99.35,
+        "roas": "1.46",
+        "ctr": "0.92%",
+        "tw": "assets/creatives/_trestique-lifetime/28-valentines-sale-ad-2.webp"
+      },
+      {
+        "rank": 29,
+        "name": "Holiday Sale | Vid Ad #4",
+        "spend": 3879.49,
+        "orders": 48,
+        "revenue": 6013.88,
+        "cpa": 80.82,
+        "roas": "1.55",
+        "ctr": "1.10%",
+        "tw": "assets/creatives/_trestique-lifetime/29-holiday-sale-vid-ad-4.webp"
+      },
+      {
+        "rank": 30,
+        "name": "Delia | UGC Ad #2",
+        "spend": 3735.24,
+        "orders": 38,
+        "revenue": 4594.43,
+        "cpa": 98.3,
+        "roas": "1.23",
+        "ctr": "1.48%",
+        "tw": "assets/creatives/_trestique-lifetime/30-delia-ugc-ad-2.webp"
+      }
+    ],
+    "totals": {
+      "spend": 655538.86,
+      "orders": 5874,
+      "revenue": 896274.23,
+      "roas": "1.37"
+    }
+  }
 }
