@@ -405,6 +405,16 @@
     .xp b { color: var(--text); font-weight: 600; }
     @media (max-width: 560px) { .xp li { grid-template-columns: 1fr; gap: 2px; } }
 
+    .cr-how { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+    .cr-how .cr-brief { grid-column: auto; }
+    .cr-rules { border: 1px solid var(--line); border-radius: var(--r); background: rgba(255,255,255,0.025); }
+    .cr-rules .hd { padding: 14px 18px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 11.5px; color: var(--dim); }
+    .cr-rules ul { list-style: none; padding: 14px 18px 18px; display: grid; gap: 10px; }
+    .cr-rules li { font-size: 14px; color: var(--muted); line-height: 1.5; padding-left: 14px; position: relative; }
+    .cr-rules li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 2px; background: var(--cyan); }
+    .cr-rules b { color: var(--text); font-weight: 600; }
+    @media (max-width: 960px) { .cr-how { grid-template-columns: 1fr; } }
+
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 960px) {
       .navlinks { display: none; } .burger { display: flex; }
@@ -447,6 +457,7 @@
   <div class="navin">
     <a class="logo" href="#top"><span class="mark">AR</span>arthur<span class="slash">/</span>ruckert</a>
     <div class="navlinks" id="navlinks">
+      <a href="#strategy">strategy</a>
       <a href="#creatives">creatives</a>
       <a href="#cases">cases</a>
       <a href="#cpa">why-cpa</a>
@@ -463,12 +474,13 @@
 </nav>
 
 <div id="mobile-menu">
-  <a href="#creatives">Creatives <span class="mono">01</span></a>
-  <a href="#cases">Case studies <span class="mono">02</span></a>
-  <a href="#cpa">Why CPA <span class="mono">03</span></a>
-  <a href="#portfolio">Portfolio <span class="mono">04</span></a>
-  <a href="#services">Services <span class="mono">05</span></a>
-  <a href="#about">About <span class="mono">06</span></a>
+  <a href="#strategy">Creative strategy <span class="mono">01</span></a>
+  <a href="#creatives">Creative results <span class="mono">02</span></a>
+  <a href="#cases">Case studies <span class="mono">03</span></a>
+  <a href="#cpa">Why CPA <span class="mono">04</span></a>
+  <a href="#portfolio">Portfolio <span class="mono">05</span></a>
+  <a href="#services">Services <span class="mono">06</span></a>
+  <a href="#about">About <span class="mono">07</span></a>
   <div class="mm-cta"><a class="btn primary big js-contact" href="#contact">Message me <span class="arr">→</span></a></div>
 </div>
 
@@ -559,16 +571,14 @@
   </div>
 </section>
 
-<!-- CREATIVES -->
-<section id="creatives" class="hr">
+<!-- CREATIVE STRATEGY -->
+<section id="strategy" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="sec-kicker"><span class="idx">01</span> creative strategy</div>
-      <h2>Creatives I wrote. <em>What they sold.</em></h2>
-      <p class="sec-sub">I don't hand the creative team a mood board. I hand them a brief built from what sold last week, one angle and one persona per creative, then I buy the media and read the result. Numbers come from Triple Whale (Triple Attribution + platform view).</p>
+      <h2>How I decide <em>what gets made.</em></h2>
+      <p class="sec-sub">I don't hand the creative team a mood board. I hand them a brief built from what sold last week, one angle and one persona per creative, then I buy the media and read the result.</p>
     </div>
-
-    <div class="cr-totals reveal" id="cr-totals" hidden></div>
 
     <div class="cr-steps stagger">
       <div class="cr-step"><div class="n">step 01</div><h3>Research winners and competitors</h3><p>This week's top creatives by sales and CPA, plus competitor ads live for months in Trendtrack, Foreplay and the Meta Ad Library.</p></div>
@@ -584,9 +594,9 @@
     </div>
     <div class="cr-src">Source: Meta Ads Manager and SDW weekly creative reports, Oct to Nov 2026.</div>
 
-    <div class="cr-filters" id="cr-filters" hidden></div>
-    <div class="cr-grid stagger" id="cr-grid">
-      <article class="cr-card cr-brief" data-brand="*" data-format="*">
+
+    <div class="cr-how">
+      <article class="cr-card cr-brief">
         <div class="hd"><span>brief_template.md</span><span>anonymized</span></div>
 <pre><span class="k">brand / market:</span> [brand] · [US | UK | AU | NZ]
 <span class="k">concept:</span> validated winner to build on
@@ -600,7 +610,34 @@
 <span class="k">reference creative:</span> [link]
 <span class="k">author:</span> Arthur Rückert</pre>
       </article>
+      <div class="cr-rules reveal">
+        <div class="hd">house_rules.md</div>
+        <ul>
+          <li><b>One angle per creative.</b> One persona, written in their words.</li>
+          <li><b>Up to 4 hooks</b> on a validated body. The body stays, the first 3 seconds change.</li>
+          <li><b>One lever per iteration:</b> hook, angle or format. Never all three.</li>
+          <li><b>Real footage over AI.</b> No discount in the hook.</li>
+          <li><b>CT to CV:</b> a creative graduates to its own campaign once it sells under the market's CPA ceiling.</li>
+          <li><b>Kill rule:</b> 2x the ticket in spend with no sale, plus a revival test for underspent creatives.</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- CREATIVES -->
+<section id="creatives" class="hr">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-kicker"><span class="idx">02</span> creative results</div>
+      <h2>Creatives I wrote. <em>What they sold.</em></h2>
+      <p class="sec-sub">Top creatives by pixel purchases on Meta, from Triple Whale (TA + Platform Views). Every card opens its Triple Whale print. Currencies are shown as each store reports them.</p>
+    </div>
+
+    <div class="cr-totals reveal" id="cr-totals" hidden></div>
+
+    <div class="cr-filters" id="cr-filters" hidden></div>
+    <div class="cr-grid" id="cr-grid"></div>
   </div>
 </section>
 
@@ -608,7 +645,7 @@
 <section id="cases" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-kicker"><span class="idx">02</span> case studies</div>
+      <div class="sec-kicker"><span class="idx">03</span> case studies</div>
       <h2>Seven accounts. <em>Real screenshots.</em></h2>
       <p class="sec-sub">From a $5.5M enterprise account to cost-cap stores with a $30 ticket. Each panel shows the structure, what a customer cost, the revenue that followed, and the Ads Manager views to back it up.</p>
     </div>
@@ -812,7 +849,7 @@
 <section id="cpa" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-kicker"><span class="idx">03</span> why cpa, not roas</div>
+      <div class="sec-kicker"><span class="idx">04</span> why cpa, not roas</div>
       <h2>I optimize for cost per acquisition. <em>ROAS is the side effect.</em></h2>
       <p class="sec-sub">ROAS is a ratio. It looks great when you sell to people who were going to buy anyway, and it collapses the moment you try to grow. CPA is a cost. It tells you exactly what a new customer costs today, and whether you can afford more of them tomorrow.</p>
     </div>
@@ -840,7 +877,7 @@
 <section id="portfolio" class="hr">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-kicker"><span class="idx">04</span> more from the portfolio</div>
+      <div class="sec-kicker"><span class="idx">05</span> more from the portfolio</div>
       <h2>These seven are not the exception. <em>They are the pattern.</em></h2>
       <p class="sec-sub">E-commerce, SaaS, high-ticket coaching, B2B industrial, and creators, across the USA, Europe, and Australia.</p>
     </div>
@@ -909,7 +946,7 @@
   <div class="wrap">
     <div class="sv-grid">
       <div class="sec-head reveal">
-        <div class="sec-kicker"><span class="idx">05</span> working with me</div>
+        <div class="sec-kicker"><span class="idx">06</span> working with me</div>
         <h2>What <em>you get.</em></h2>
         <p class="sec-sub">Whether you need to scale, audit your campaigns, or rebuild your account from scratch, the work follows the same system that produced every number on this page.</p>
         <div style="margin-top: 28px;"><a class="btn primary js-contact" href="#contact">Start a conversation <span class="arr">→</span></a></div>
@@ -931,7 +968,7 @@
     <div class="about reveal">
       <div class="ph"><img loading="lazy" src="assets/arthur.jpg" alt="Arthur Rückert"><span class="tag">arthur.jpg</span></div>
       <div>
-        <div class="sec-kicker"><span class="idx">06</span> about</div>
+        <div class="sec-kicker"><span class="idx">07</span> about</div>
         <h2>Arthur <em>Rückert</em></h2>
         <p><strong>I like to understand the business before touching any campaign.</strong> From there, I build creatives that educate before converting, structure funnels that hold CPA even as budget scales, and make decisions based on real data.</p>
         <p>I've worked with e-commerce, SaaS, B2B industrial, content creators, and premium brands across the USA, Europe, and Australia. My specialty is Meta and paid social: that is where I focus, and where every result on this page comes from.</p>
@@ -1016,7 +1053,7 @@
 
   // nav + progress + active link
   const nav = $('#nav'), bar = $('#progress');
-  const secs = ['creatives','cases','cpa','portfolio','services','about'].map(id => document.getElementById(id));
+  const secs = ['strategy','creatives','cases','cpa','portfolio','services','about'].map(id => document.getElementById(id));
   const links = $$('#navlinks a');
   const onScroll = () => {
     nav.classList.toggle('scrolled', scrollY > 24);
