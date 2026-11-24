@@ -1141,7 +1141,7 @@
     grid.addEventListener('click', e => { const b = e.target.closest('[data-lb]'); if (b) openLb([{ src: b.dataset.lb, alt: b.dataset.cap }], 0); });
     const vio = new IntersectionObserver(es => es.forEach(e => { const v = e.target; if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; if (!reduce) v.play().catch(() => {}); } else v.pause(); }), { threshold: 0.35 });
     $$('video[data-src]', grid).forEach(v => vio.observe(v));
-    $$('.cr-card, .cr-brand', grid).forEach(el => el.classList.add('in'));
+    grid.classList.remove('stagger'); grid.classList.add('in');
     const f = $('#cr-filters'), st = { brand: '*', format: '*' };
     const formats = [...new Set(all.map(c => c.format))];
     const group = (key, vals) => `<span class="lbl">${key}</span><button class="on" data-k="${key}" data-v="*">all</button>` + vals.map(v => `<button data-k="${key}" data-v="${esc(v)}">${esc(v)}</button>`).join('');
