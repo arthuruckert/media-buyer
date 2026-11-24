@@ -105,7 +105,13 @@ def main():
     rows = {r['folder']: r for r in csv.DictReader(open(src / '_summary' / 'index.csv', encoding='utf-8'))}
     brands, problems = [], []
     keep = set()
-    for brand, slugs in SELECTION.items():
+    selection = {}
+    for f, r in rows.items():  # index order = ranking order
+        if r['brand'] in SELECTION:
+            selection.setdefault(r['brand'], []).append(f)
+    for brand in SELECTION:
+        selection.setdefault(brand, [])
+    for brand, slugs in selection.items():
         cards = []
         for slug in slugs:
             r = rows.get(slug)
@@ -142,6 +148,7 @@ def main():
             card = {
                 'slug': slug, 'brand': r['brand'], 'market': r['market'], 'name': r['ad_name'], 'format': r['format'],
                 'period': period_label(r['period']), 'currency': cur, 'currency_code': code,
+                'window': 'Last 180 days' if '180' in r['period'] else 'Last 90 days',
                 'spend': money(r['spend']), 'orders': r['orders'], 'revenue': money(r['revenue']),
                 'cpa': money(r['cpa']), 'roas': r['roas'], 'ctr': r['ctr'], 'status': r['status'],
                 'hook': hook_of(m) or None, 'angle': g('angle'), 'persona': g('persona'),
@@ -156,7 +163,9 @@ def main():
                     ltw = f'assets/creatives/{slug}/tw-lifetime.webp'
                 launch = r.get('launch_date', '')
                 card['lifetime'] = {
-                    'label': 'Since launch' if filled(launch) else 'All Triple Whale history', 'scope': 'this ad',
+                    **({'label': 'Since launch', 'scope': 'this ad'} if filled(launch) else
+                       {'label': 'Lifetime in the brand', 'scope': 'all ads with this name, all campaigns'} if r['lt_period'].startswith('2022-11-24') else
+                       {'label': 'All Triple Whale history', 'scope': 'this ad'}),
                     'period': period_label(r['lt_period']),
                     'launch_date': period_label(f'{launch} a {launch}').split(' to ')[1] if filled(launch) else None,
                     'spend': money(r['lt_spend']), 'orders': r['lt_orders'], 'revenue': money(r['lt_revenue']),

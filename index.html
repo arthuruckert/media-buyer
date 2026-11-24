@@ -381,7 +381,7 @@
     .cr-brand .ctx { flex-basis: 100%; font-size: 12.5px; color: var(--dim); font-family: var(--mono); margin-top: 2px; }
     .cr-stats > div { border: 1px solid var(--line); border-radius: 8px; padding: 8px 9px; min-width: 0; }
     .cr-stats .l { font-family: var(--mono); font-size: 10px; color: var(--dim); text-transform: uppercase; }
-    .cr-stats .v { font-family: var(--head); font-weight: 700; font-size: 14px; color: var(--cyan); font-variant-numeric: tabular-nums; margin-top: 2px; overflow-wrap: anywhere; }
+    .cr-stats .v { font-family: var(--head); font-weight: 700; font-size: 13px; letter-spacing: -0.02em; color: var(--cyan); font-variant-numeric: tabular-nums; margin-top: 2px; overflow-wrap: anywhere; }
     .cr-actions { display: flex; flex-wrap: wrap; gap: 6px; }
     .cr-actions button, .cr-actions a { font-family: var(--mono); font-size: 11px; padding: 6px 9px; border-radius: 7px; background: rgba(255,255,255,0.04); border: 1px solid var(--line-2); color: var(--text); cursor: pointer; text-decoration: none; }
     .cr-actions .tw { color: var(--muted); border-color: var(--line); background: none; }
@@ -1154,13 +1154,13 @@
     t.innerHTML = `<div class="cell"><div class="l">Purchases · ${all.length} creatives below</div><div class="v">${fmt0(all.reduce((s, c) => s + N(c.orders), 0))}</div></div>` +
       `<div class="cell"><div class="l">Pixel revenue, by store currency</div><div class="v" style="font-size:clamp(18px,1.9vw,26px)">${Object.entries(byCur).map(([k, v]) => esc(k) + fmt0(v)).join(' · ')}</div></div>` +
       `<div class="cell"><div class="l">Brands</div><div class="v" style="font-size:clamp(18px,1.9vw,26px)">${brands.map(b => esc(b.brand)).join(' · ')}</div></div>` +
-      `<div class="cell proof"><div class="l">Source</div><div class="s">Triple Whale, Meta, TA + Platform Views, pixel purchases. Last 90 days unless the card says otherwise. Currencies shown as reported, not converted.</div></div>`;
+      `<div class="cell proof"><div class="l">Source</div><div class="s">Triple Whale, Meta, TA + Platform Views, pixel purchases. Top 10 per brand ranked on the last 180 days; lifetime shown separately on each card. Currencies shown as reported, not converted.</div></div>`;
     t.hidden = false;
     const ltLine = g => {
-      const lt = g.filter(c => c.lifetime); if (!lt.length) return '';
+      const seen = new Set(); const lt = g.filter(c => { if (!c.lifetime) return false; const k = c.lifetime.spend + '|' + c.lifetime.orders + '|' + c.currency; if (seen.has(k)) return false; seen.add(k); return true; }); if (!lt.length) return '';
       const sum = {}; lt.forEach(c => { const k = c.currency; sum[k] = sum[k] || { o: 0, r: 0, s: 0 }; sum[k].o += N(c.lifetime.orders); sum[k].r += N(c.lifetime.revenue); sum[k].s += N(c.lifetime.spend); });
       const parts = Object.entries(sum).map(([k, v]) => `<b>${fmt0(v.o)}</b> purchases, <b>${esc(k)}${fmt0(v.r)}</b> revenue on ${esc(k)}${fmt0(v.s)} spend`);
-      return `<p class="ltsum"><span>Lifetime, same ${lt.length} creatives:</span> ${parts.join(' · ')}</p>`;
+      return `<p class="ltsum"><span>Lifetime, ${lt.length} creatives, repeated totals counted once:</span> ${parts.join(' · ')}</p>`;
     };
     brands.forEach(b => {
       const g = b.cards, markets = [...new Set(g.map(c => c.market))];
@@ -1186,7 +1186,7 @@
             <div class="who">${esc(c.brand)} · ${esc(c.market)} · ${esc(c.period)}</div>
             ${c.hook ? `<div class="hook">“${esc(c.hook)}”</div>` : ''}
             <dl>${c.angle ? `<dt>angle</dt><dd>${esc(c.angle)}</dd>` : ''}${c.persona ? `<dt>persona</dt><dd>${esc(c.persona)}</dd>` : ''}</dl>
-            <div class="cr-per">Last 90 days · ${esc(c.period)}</div>
+            <div class="cr-per">${esc(c.window || 'Last 90 days')} · ${esc(c.period)}</div>
             <div class="cr-stats">
               <div><div class="l">purchases</div><div class="v">${esc(c.orders)}</div></div>
               <div><div class="l">revenue</div><div class="v">${C}${esc(c.revenue)}</div></div>
@@ -1205,7 +1205,7 @@
               <div><div class="l">CTR</div><div class="v">${esc(c.lifetime.ctr)}</div></div>
             </div>` : ''}
             ${c.my_role && c.my_role.length ? `<div class="chips"><span class="chip">my role</span>${c.my_role.map(r => `<span class="chip hl">${esc(r)}</span>`).join('')}</div>` : ''}
-            <div class="cr-actions">${c.tw ? `<button type="button" class="tw" data-lb="${esc(c.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · last 90 days · ' + c.period)}">Triple Whale · 90 days</button>` : ''}${c.lifetime && c.lifetime.tw ? `<button type="button" class="tw" data-lb="${esc(c.lifetime.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · ' + c.lifetime.label + ' · ' + c.lifetime.period)}">Triple Whale · ${esc(c.lifetime.label.toLowerCase())}</button>` : ''}</div>
+            <div class="cr-actions">${c.tw ? `<button type="button" class="tw" data-lb="${esc(c.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · ' + (c.window || 'Last 90 days') + ' · ' + c.period)}">Triple Whale · ${esc((c.window || 'Last 90 days').toLowerCase())}</button>` : ''}${c.lifetime && c.lifetime.tw ? `<button type="button" class="tw" data-lb="${esc(c.lifetime.tw)}" data-cap="${esc(c.brand + ' ' + c.market + ' · Triple Whale · ' + c.lifetime.label + ' · ' + c.lifetime.period)}">Triple Whale · ${esc(c.lifetime.label.toLowerCase())}</button>` : ''}</div>
             ${c.learning ? `<div class="cr-learn"><b>Learning:</b> ${esc(c.learning)}${c.next_iteration ? ` <b>Next iteration:</b> ${esc(c.next_iteration)}` : ''}</div>` : ''}
           </div>`;
         grid.insertBefore(el, brief);
