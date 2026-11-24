@@ -33,12 +33,6 @@ SELECTION = {
         'trestique-us-faceinacase-static', 'trestique-us-early-access-img-ad-1', 'trestique-us-ad-winner-6',
         'trestique-us-new-ad-3', 'trestique-us-lae-andres-ugc', 'trestique-us-michele-johnston-ugc-ad-3',
         'trestique-us-ellen-ugc'],
-    'Magic Bra': [
-        'magicbra-us-strapless-buckle-imagead-004-h6', 'magicbra-us-posture-bra-imagead009',
-        'magicbra-us-corsetposture-ad011-h9', 'magicbra-us-strapless-buckle-imagead-012-h5',
-        'magicbra-us-lace-imagead-002-h2-bf-v2', 'magicbra-us-strappy-imagead005-h1',
-        'magicbra-uk-posture-backsmoothing-imagead007-h5', 'magicbra-uk-imagead-batch3-9',
-        'magicbra-uk-videoad002-straplessfrontbuckle-h1'],
 }
 # Currency symbols as given by the user: $ = USD, A$ = AUD, £ = GBP
 CURRENCY = {'$': ('US$', 'USD'), 'A$': ('A$', 'AUD'), '£': ('£', 'GBP'), 'NZ$': ('NZ$', 'NZD')}
@@ -126,7 +120,8 @@ def main():
             media = None
             ad = next((d / n for n in ('ad.mp4', 'ad.jpg', 'ad.png', 'ad.jpeg') if (d / n).exists()), None)
             if ad and ad.suffix == '.mp4':
-                web_video(ad, out / 'ad.mp4', out / 'poster.jpg')
+                if not ((out / 'ad.mp4').exists() and (out / 'poster.jpg').exists()):
+                    web_video(ad, out / 'ad.mp4', out / 'poster.jpg')
                 media = {'type': 'video', 'src': f'assets/creatives/{slug}/ad.mp4', 'poster': f'assets/creatives/{slug}/poster.jpg'}
             elif ad:
                 web_image(ad, out / 'ad.webp')
@@ -157,8 +152,8 @@ def main():
         brands.append({'brand': brand, 'cards': cards})
     # account context, from _summary/summary.md / the user's list
     context = {
+        'Astra Straps': 'Store totals, last 365 days (Triple Whale Summary, all channels): US US$2,029,210 sales at 2.17 ROAS, AU A$631,902 at 1.97, UK £326,859 at 2.52. Meta pixel purchases: 7,226 US + 1,427 AU + 781 UK = 9,434.',
         'Trestique': 'Trestique US, last 365 days (Triple Whale Summary): US$1,593,152 total sales, US$880,653 blended spend, 1.89 ROAS, US$606,750 net profit.',
-        'Magic Bra': 'Magic Bra US, last 365 days (Triple Whale Summary): US$518,194 total sales, US$287,079 blended spend, 2.03 ROAS, US$15,690 net profit.',
     }
     for b in brands:
         b['context'] = context.get(b['brand'])
