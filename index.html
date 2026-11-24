@@ -1160,7 +1160,7 @@
       const lt = g.filter(c => c.lifetime); if (!lt.length) return '';
       const sum = {}; lt.forEach(c => { const k = c.currency; sum[k] = sum[k] || { o: 0, r: 0, s: 0 }; sum[k].o += N(c.lifetime.orders); sum[k].r += N(c.lifetime.revenue); sum[k].s += N(c.lifetime.spend); });
       const parts = Object.entries(sum).map(([k, v]) => `<b>${fmt0(v.o)}</b> purchases, <b>${esc(k)}${fmt0(v.r)}</b> revenue on ${esc(k)}${fmt0(v.s)} spend`);
-      return `<p class="ltsum"><span>${esc(lt[0].lifetime.label)}, same ${lt.length} creatives:</span> ${parts.join(' · ')}</p>`;
+      return `<p class="ltsum"><span>Lifetime, same ${lt.length} creatives:</span> ${parts.join(' · ')}</p>`;
     };
     brands.forEach(b => {
       const g = b.cards, markets = [...new Set(g.map(c => c.market))];
@@ -1195,7 +1195,7 @@
               <div><div class="l">CTR</div><div class="v">${esc(c.ctr)}</div></div>
               <div><div class="l">spend</div><div class="v">${C}${esc(c.spend)}</div></div>
             </div>
-            ${c.lifetime ? `<div class="cr-per lt">${c.lifetime.launch_date ? 'Since launch · ' + esc(c.lifetime.launch_date) + ' to ' + esc(c.lifetime.period.split(' to ')[1] || '') : esc(c.lifetime.label) + ' · ' + esc(c.lifetime.period)}</div>
+            ${c.lifetime ? `<div class="cr-per lt">${c.lifetime.launch_date ? 'Since launch · ' + esc(c.lifetime.launch_date) + ' to ' + esc(c.lifetime.period.split(' to ')[1] || '') : esc(c.lifetime.label) + ' · ' + esc(c.lifetime.period)}${c.lifetime.scope ? ' · ' + esc(c.lifetime.scope) : ''}</div>
             <div class="cr-stats lt">
               <div><div class="l">purchases</div><div class="v">${esc(c.lifetime.orders)}</div></div>
               <div><div class="l">revenue</div><div class="v">${C}${esc(c.lifetime.revenue)}</div></div>

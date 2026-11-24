@@ -156,7 +156,7 @@ def main():
                     ltw = f'assets/creatives/{slug}/tw-lifetime.webp'
                 launch = r.get('launch_date', '')
                 card['lifetime'] = {
-                    'label': 'Since launch' if filled(launch) else 'All Triple Whale history',
+                    'label': 'Since launch' if filled(launch) else 'All Triple Whale history', 'scope': 'this ad',
                     'period': period_label(r['lt_period']),
                     'launch_date': period_label(f'{launch} a {launch}').split(' to ')[1] if filled(launch) else None,
                     'spend': money(r['lt_spend']), 'orders': r['lt_orders'], 'revenue': money(r['lt_revenue']),
@@ -192,6 +192,22 @@ def main():
             'totals': {'spend': tot_spend, 'orders': sum(i['orders'] for i in items), 'revenue': tot_rev,
                        'roas': f'{tot_rev / tot_spend:.2f}'},
         }
+        # creative lifetime in the brand: when a card's ad name is in the all-time list, use the name total
+        by_name = {i['name'].strip().lower(): i for i in items}
+        for b in brands:
+            if b['brand'] != 'Trestique':
+                continue
+            for c in b['cards']:
+                hit = by_name.get(c['name'].strip().lower())
+                if hit:
+                    c['lifetime'] = {
+                        'label': 'Lifetime in the brand', 'scope': 'all ads with this name, all campaigns',
+                        'period': tl['period'], 'launch_date': None,
+                        'spend': f"{hit['spend']:,.2f}", 'orders': f"{hit['orders']:,}", 'revenue': f"{hit['revenue']:,.2f}",
+                        'cpa': f"{hit['cpa']:,.2f}", 'roas': hit['roas'], 'ctr': hit['ctr'], 'tw': hit['tw'],
+                    }
+                elif c.get('lifetime'):
+                    c['lifetime']['scope'] = 'this ad only'
         print(f"  trestique top {len(items)}: spend {tot_spend:,.2f}, purchases {tl['totals']['orders']}, revenue {tot_rev:,.2f}, roas {tl['totals']['roas']}")
     (OUT / 'creatives.json').write_text(json.dumps({'brands': brands, 'trestique_lifetime': tl}, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     # drop old card folders that are no longer selected

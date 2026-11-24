@@ -36,6 +36,7 @@
           "tw": "assets/creatives/astrastraps-au-echo-videoad004-us-h2/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Aug 20 to Nov 23, 2026",
             "launch_date": "Aug 21, 2026",
             "spend": "4,645.40",
@@ -81,6 +82,7 @@
           "tw": "assets/creatives/astrastraps-us-echo-videoad001-au-h5/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Oct 7 to Nov 23, 2026",
             "launch_date": "Oct 8, 2026",
             "spend": "1,551.00",
@@ -124,6 +126,7 @@
           "tw": "assets/creatives/astrastraps-us-aereslim-imagead001-batch1-v2-1/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "May 22 to Nov 23, 2026",
             "launch_date": "May 23, 2026",
             "spend": "3,696.48",
@@ -168,6 +171,7 @@
           "tw": "assets/creatives/astrastraps-au-leam-ad003-916-h2/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Oct 13 to Nov 23, 2026",
             "launch_date": "Oct 14, 2026",
             "spend": "909.07",
@@ -211,6 +215,7 @@
           "tw": "assets/creatives/astrastraps-au-aereslim-imagead002-h1-v2/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Oct 13 to Nov 23, 2026",
             "launch_date": "Oct 14, 2026",
             "spend": "1,278.35",
@@ -256,6 +261,7 @@
           "tw": "assets/creatives/astrastraps-us-aevumnylon-imagead-006-h5/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Oct 13 to Nov 23, 2026",
             "launch_date": "Oct 14, 2026",
             "spend": "860.95",
@@ -298,6 +304,7 @@
           "tw": "assets/creatives/astrastraps-au-2-ad-reviews/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Jul 15 to Nov 23, 2026",
             "launch_date": "Jul 16, 2026",
             "spend": "1,125.62",
@@ -341,6 +348,7 @@
           "tw": "assets/creatives/astrastraps-us-class-stainless-imagead006-h4/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Oct 13 to Nov 23, 2026",
             "launch_date": "Oct 14, 2026",
             "spend": "527.97",
@@ -384,6 +392,7 @@
           "tw": "assets/creatives/astrastraps-us-ad-pack-2-cc13/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Mar 19 to Nov 23, 2026",
             "launch_date": "Mar 20, 2026",
             "spend": "3,317.09",
@@ -429,6 +438,7 @@
           "tw": "assets/creatives/astrastraps-au-echo-videoad001-au-h5/tw.webp",
           "lifetime": {
             "label": "Since launch",
+            "scope": "this ad",
             "period": "Oct 23 to Nov 23, 2026",
             "launch_date": "Oct 24, 2026",
             "spend": "539.61",
@@ -476,16 +486,17 @@
           },
           "tw": "assets/creatives/trestique-us-ad-winner-4/tw.webp",
           "lifetime": {
-            "label": "All Triple Whale history",
-            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "label": "Lifetime in the brand",
+            "scope": "all ads with this name, all campaigns",
+            "period": "Nov 24, 2022 to Nov 23, 2026",
             "launch_date": null,
-            "spend": "14,462.68",
-            "orders": "135",
-            "revenue": "23,105.33",
-            "cpa": "107.13",
-            "roas": "1.60",
-            "ctr": "2.27%",
-            "tw": "assets/creatives/trestique-us-ad-winner-4/tw-lifetime.webp"
+            "spend": "18,913.60",
+            "orders": "172",
+            "revenue": "27,996.87",
+            "cpa": "109.96",
+            "roas": "1.48",
+            "ctr": "2.17%",
+            "tw": "assets/creatives/_trestique-lifetime/08-ad-winner-4.webp"
           },
           "alt": "Trestique US UGC video ad: 134 purchases at US$105.84 CPA, 1.62 ROAS"
         },
@@ -518,16 +529,17 @@
           },
           "tw": "assets/creatives/trestique-us-new-ad-1/tw.webp",
           "lifetime": {
-            "label": "All Triple Whale history",
-            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "label": "Lifetime in the brand",
+            "scope": "all ads with this name, all campaigns",
+            "period": "Nov 24, 2022 to Nov 23, 2026",
             "launch_date": null,
-            "spend": "13,085.93",
-            "orders": "113",
-            "revenue": "17,640.12",
-            "cpa": "115.80",
-            "roas": "1.35",
-            "ctr": "1.84%",
-            "tw": "assets/creatives/trestique-us-new-ad-1/tw-lifetime.webp"
+            "spend": "30,852.50",
+            "orders": "241",
+            "revenue": "38,122.61",
+            "cpa": "128.02",
+            "roas": "1.24",
+            "ctr": "1.81%",
+            "tw": "assets/creatives/_trestique-lifetime/07-new-ad-1.webp"
           },
           "alt": "Trestique US UGC video ad: 99 purchases at US$115.87 CPA, 1.34 ROAS"
         },
@@ -560,16 +572,17 @@
           },
           "tw": "assets/creatives/trestique-us-new-ad-5/tw.webp",
           "lifetime": {
-            "label": "All Triple Whale history",
-            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "label": "Lifetime in the brand",
+            "scope": "all ads with this name, all campaigns",
+            "period": "Nov 24, 2022 to Nov 23, 2026",
             "launch_date": null,
-            "spend": "7,759.02",
-            "orders": "84",
-            "revenue": "12,426.79",
-            "cpa": "92.37",
-            "roas": "1.60",
-            "ctr": "1.24%",
-            "tw": "assets/creatives/trestique-us-new-ad-5/tw-lifetime.webp"
+            "spend": "47,302.58",
+            "orders": "523",
+            "revenue": "73,790.90",
+            "cpa": "90.44",
+            "roas": "1.56",
+            "ctr": "1.61%",
+            "tw": "assets/creatives/_trestique-lifetime/03-new-ad-5.webp"
           },
           "alt": "Trestique US UGC video ad: 84 purchases at US$92.37 CPA, 1.60 ROAS"
         },
@@ -601,16 +614,17 @@
           },
           "tw": "assets/creatives/trestique-us-faceinacase-static/tw.webp",
           "lifetime": {
-            "label": "All Triple Whale history",
-            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "label": "Lifetime in the brand",
+            "scope": "all ads with this name, all campaigns",
+            "period": "Nov 24, 2022 to Nov 23, 2026",
             "launch_date": null,
-            "spend": "7,113.41",
-            "orders": "80",
-            "revenue": "11,462.94",
-            "cpa": "88.92",
-            "roas": "1.61",
-            "ctr": "1.43%",
-            "tw": "assets/creatives/trestique-us-faceinacase-static/tw-lifetime.webp"
+            "spend": "11,682.44",
+            "orders": "104",
+            "revenue": "14,716.33",
+            "cpa": "112.33",
+            "roas": "1.26",
+            "ctr": "1.33%",
+            "tw": "assets/creatives/_trestique-lifetime/15-faceinacase-static.webp"
           },
           "alt": "Trestique US static ad: 80 purchases at US$88.92 CPA, 1.61 ROAS"
         },
@@ -642,16 +656,17 @@
           },
           "tw": "assets/creatives/trestique-us-early-access-img-ad-1/tw.webp",
           "lifetime": {
-            "label": "All Triple Whale history",
-            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "label": "Lifetime in the brand",
+            "scope": "all ads with this name, all campaigns",
+            "period": "Nov 24, 2022 to Nov 23, 2026",
             "launch_date": null,
-            "spend": "5,266.25",
-            "orders": "52",
-            "revenue": "6,786.05",
-            "cpa": "101.27",
-            "roas": "1.29",
-            "ctr": "1.73%",
-            "tw": "assets/creatives/trestique-us-early-access-img-ad-1/tw-lifetime.webp"
+            "spend": "7,905.61",
+            "orders": "81",
+            "revenue": "10,638.60",
+            "cpa": "97.60",
+            "roas": "1.35",
+            "ctr": "1.67%",
+            "tw": "assets/creatives/_trestique-lifetime/19-early-access-img-ad-1.webp"
           },
           "alt": "Trestique US static ad: 52 purchases at US$101.27 CPA, 1.29 ROAS"
         },
@@ -685,6 +700,7 @@
           "tw": "assets/creatives/trestique-us-ad-winner-6/tw.webp",
           "lifetime": {
             "label": "All Triple Whale history",
+            "scope": "this ad only",
             "period": "Nov 24, 2023 to Nov 23, 2026",
             "launch_date": null,
             "spend": "2,295.23",
@@ -726,16 +742,17 @@
           },
           "tw": "assets/creatives/trestique-us-new-ad-3/tw.webp",
           "lifetime": {
-            "label": "All Triple Whale history",
-            "period": "Nov 24, 2023 to Nov 23, 2026",
+            "label": "Lifetime in the brand",
+            "scope": "all ads with this name, all campaigns",
+            "period": "Nov 24, 2022 to Nov 23, 2026",
             "launch_date": null,
-            "spend": "2,889.45",
-            "orders": "31",
-            "revenue": "4,645.75",
-            "cpa": "93.21",
-            "roas": "1.61",
-            "ctr": "1.99%",
-            "tw": "assets/creatives/trestique-us-new-ad-3/tw-lifetime.webp"
+            "spend": "11,841.35",
+            "orders": "99",
+            "revenue": "14,189.11",
+            "cpa": "119.61",
+            "roas": "1.20",
+            "ctr": "1.77%",
+            "tw": "assets/creatives/_trestique-lifetime/16-new-ad-3.webp"
           },
           "alt": "Trestique US UGC video ad: 24 purchases at US$91.09 CPA, 1.66 ROAS"
         },
@@ -769,6 +786,7 @@
           "tw": "assets/creatives/trestique-us-lae-andres-ugc/tw.webp",
           "lifetime": {
             "label": "All Triple Whale history",
+            "scope": "this ad only",
             "period": "Nov 24, 2023 to Nov 23, 2026",
             "launch_date": null,
             "spend": "1,712.57",
@@ -811,6 +829,7 @@
           "tw": "assets/creatives/trestique-us-michele-johnston-ugc-ad-3/tw.webp",
           "lifetime": {
             "label": "All Triple Whale history",
+            "scope": "this ad only",
             "period": "Nov 24, 2023 to Nov 23, 2026",
             "launch_date": null,
             "spend": "1,093.59",
@@ -853,6 +872,7 @@
           "tw": "assets/creatives/trestique-us-ellen-ugc/tw.webp",
           "lifetime": {
             "label": "All Triple Whale history",
+            "scope": "this ad only",
             "period": "Nov 24, 2023 to Nov 23, 2026",
             "launch_date": null,
             "spend": "1,454.72",
